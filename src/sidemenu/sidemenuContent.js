@@ -1,6 +1,7 @@
 import React from 'react';
 import MaterialTitlePanel from './sidemenu material';
 import PropTypes from 'prop-types';
+import { Router, Route, Switch } from 'react-router';
 
 const styles = {
     sidebar: {
@@ -26,6 +27,7 @@ const styles = {
 };
 
 const SidebarContent = (props) => {
+
     const style = props.style ? {...styles.sidebar, ...props.style} : styles.sidebar;
 
     const links = [];
@@ -41,7 +43,11 @@ const SidebarContent = (props) => {
                 <a href="index.html" style={styles.sidebarLink}>Home</a>
                 <a href="menu" style={styles.sidebarLink}>menu</a>
                 <div style={styles.divider} />
-                {links}
+                {/*{links}*/}
+                <a href="#" style={styles.sidebarLink}>about</a>
+                <a href="#" style={styles.sidebarLink}>register</a>
+                <a href="#" style={styles.sidebarLink}>login</a>
+                <a href="#" style={styles.sidebarLink}>links</a>
             </div>
         </MaterialTitlePanel>
     );

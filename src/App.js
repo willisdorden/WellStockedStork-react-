@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import Sidebar from './sidemenu';
-import SidebarContent from './sidemenuContent';
-import MaterialTitlePanel from './sidemenu material';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import Sidebar from './sidemenu/sidemenu';
+import SidebarContent from './sidemenu/sidemenuContent';
+import MaterialTitlePanel from './sidemenu/sidemenu material';
+import Loginscreen  from './pages/Loginscreen';
+import './App.css';
+import { Router, Route, Switch } from 'react-router';
 
 import logo from './logo.svg';
+
 import './App.css';
+injectTapEventPlugin();
 const styles = {
     contentHeaderMenuLink: {
         textDecoration: 'none',
@@ -50,14 +56,23 @@ class App extends Component {
             ev.preventDefault();
         }
     }
+    componentWillMount(){
+        var loginPage =[];
+        loginPage.push(<Loginscreen parentContext={this}/>);
+        this.setState({
+            loginPage:loginPage
+        })
+    }
+
     render() {
         const sidebar = <SidebarContent />;
+
 
         const contentHeader = (
             <span>
         {!this.state.docked &&
-        <a onClick={this.toggleOpen.bind(this)} href="#" style={styles.contentHeaderMenuLink}>=</a>}
-                <span style={styles.title}>WellStockedStork</span>
+        <a onClick={this.toggleOpen.bind(this)} href="/" style={styles.contentHeaderMenuLink}>=</a>}
+                <span style={styles.title}>Menu</span>
       </span>);
 
         const sidebarProps = {
@@ -66,13 +81,11 @@ class App extends Component {
             open: this.state.open,
             onSetOpen: this.onSetOpen,
         };
+
     return (
       <div className="App">
-        <div className="App-header">
-
-        </div>
-
-          <Sidebar {...sidebarProps}>
+<div>
+          <Sidebar {...sidebarProps} >
               <MaterialTitlePanel title={contentHeader}>
                   <div style={styles.content}>
 
@@ -80,7 +93,15 @@ class App extends Component {
               </MaterialTitlePanel>
           </Sidebar>
 
+</div>
+          <div className="main">
+
+
+          </div>
+
+
       </div>
+
 
 
     );
