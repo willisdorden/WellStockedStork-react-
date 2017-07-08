@@ -5,6 +5,12 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import Login from './Login';
 import axios from 'axios';
+const styles ={
+    Register: {
+        padding: 150
+
+    }
+};
 
 class Register extends Component {
     constructor(props){
@@ -27,34 +33,32 @@ class Register extends Component {
             "email":this.state.email,
             "password":this.state.password
         };
-        axios.post(apiBaseUrl+'/register', payload)
-            .then(function (response) {
-                console.log(response);
-                if(response.data.code == 200){
-                    //  console.log("registration successfull");
-                    var loginscreen=[];
-                    loginscreen.push(<Login parentContext={this}/>);
-                    var loginmessage = "Not Registered yet.Go to registration";
-                    self.props.parentContext.setState({loginscreen:loginscreen,
-                        loginmessage:loginmessage,
-                        buttonLabel:"Register",
+         axios.post(apiBaseUrl+'/register', payload)
+             .then(function (response) {
+                 console.log(response);
+                 if(response.data.code === 200){
+                      console.log("registration successfull");
+                      var loginscreen=[];
+                      loginscreen.push(<Login parentContext={this}/>);
+                      var loginmessage = "Not Registered yet.Go to registration";
+                     self.props.parentContext.setState({loginscreen:loginscreen,
+                          loginmessage:loginmessage,
+                          buttonLabel:"Register",
                         isLogin:true
-                    });
-                }
-            })
+                     });
+                 }
+             })
             .catch(function (error) {
-                console.log(error);
+                 console.log(error);
             });
     }
 
     render() {
         return (
-            <div>
+            <div className="Register" style={styles.Register}>
                 <MuiThemeProvider>
                     <div>
-                        <AppBar
-                            title="Register"
-                        />
+                        <h1>Register</h1>
                         <TextField
                             hintText="Enter your First Name"
                             floatingLabelText="First Name"

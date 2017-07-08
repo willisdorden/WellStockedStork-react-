@@ -5,6 +5,10 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import Login from './Login';
 import axios from 'axios';
+const styles = {
+    display: 'flex',
+    justifyContent: "center"
+};
 
 class Register extends Component {
     constructor(props){
@@ -49,12 +53,10 @@ class Register extends Component {
 
     render() {
         return (
-            <div>
+            <div style={styles}>
                 <MuiThemeProvider>
                     <div>
-                        <AppBar
-                            title="Register"
-                        />
+                        <h1> Register </h1>
                         <TextField
                             hintText="Enter your First Name"
                             floatingLabelText="First Name"

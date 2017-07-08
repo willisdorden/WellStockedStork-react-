@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route, Link,} from 'react-router-dom'
+import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Sidebar from './sidemenu/sidemenu';
 import SidebarContent from './sidemenu/sidemenuContent';
 import MaterialTitlePanel from './sidemenu/sidemenu material';
 import Loginscreen  from './pages/Loginscreen';
-import './App.css';
-import { Router, Route, Switch } from 'react-router';
+import Register from './pages/Registerscreen';
+import Home from './pages/home';
+import Slider from './pages/slideshow/Slider';
 
-import logo from './logo.svg';
+import About from './pages/about';
+
 
 import './App.css';
 injectTapEventPlugin();
@@ -19,6 +23,9 @@ const styles = {
     },
     content: {
         padding: '16px',
+        backgroundColor: "white",
+        height:910,
+        width: 1405
     },
     title:{
         textAlign: 'center'
@@ -83,24 +90,25 @@ class App extends Component {
         };
 
     return (
+
       <div className="App">
-<div>
           <Sidebar {...sidebarProps} >
               <MaterialTitlePanel title={contentHeader}>
                   <div style={styles.content}>
 
+                      <Route exact path ="/" component={Home} />
+                      <Route   path ="/about" component={About} />
+                      <Route   path ="/login" component={Loginscreen} />
+                      <Route   path ="/register" component={Register} />
                   </div>
               </MaterialTitlePanel>
           </Sidebar>
 
 </div>
-          <div className="main">
 
 
-          </div>
 
 
-      </div>
 
 
 
