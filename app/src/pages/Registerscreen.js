@@ -22,7 +22,6 @@ class Register extends Component {
         }
     }
     handleClick(event){
-        var apiBaseUrl = "http://localhost:4000/api/";
         console.log("values",this.state.first_name,this.state.last_name,this.state.email,this.state.password,this.state.username);
         //To be done:check for empty values before hitting submit
         var self = this;
@@ -33,7 +32,7 @@ class Register extends Component {
             "password":this.state.password,
             "username":this.state.username
         };
-        axios.post(apiBaseUrl+'/register', payload)
+        axios.post('/register', payload)
             .then(function (response) {
                 console.log(response);
                 if(response.data.code == 200){
