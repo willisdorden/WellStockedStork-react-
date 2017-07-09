@@ -25,7 +25,6 @@ const styles = {
         padding: '16px',
         backgroundColor: "grey",
         height:910,
-        width: 1405
     },
     title:{
         textAlign: 'center'

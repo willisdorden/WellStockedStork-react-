@@ -18,9 +18,9 @@ class Login extends Component {
     }
 
     handleClick(event){
-        var apiBaseUrl = "";
-        var self = this;
-        var payload={
+        const apiBaseUrl = "";
+        const self = this;
+        const payload={
             "email":this.state.username,
             "password":this.state.password
         };
