@@ -11,7 +11,6 @@ module.exports = function(sequelize, DataTypes) {
                 validate: {
                     len: [1, 20],
                     notEmpty: true
-
                 }
             },
 
@@ -68,15 +67,7 @@ module.exports = function(sequelize, DataTypes) {
                         foreignKey: "AccountId",
                         onDelete: "cascade"
                     });
-
                 },
-                generateHash: function (password) {
-                    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
-                },
-                validPassword: function (password,storedPassword) {
-                     const isvalid = storedPassword ? bcrypt.compareSync(password,storedPassword) : false;
-                    return isvalid;
-                }
             },
             underscored: true,
         });
