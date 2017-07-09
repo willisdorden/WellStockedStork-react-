@@ -1,45 +1,40 @@
 var express = require("express");
-var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
 var mysql = require("mysql");
 var methodOverride = require("method-override");
 var sequelize = require("sequelize");
-var bcrypt = require('bcrypt');
 var cookieParser = require ('cookie-parser');
-
-var validator = require('express-validator');
-
-var db = require("./models");
-
 var app = express();
-var PORT = process.env.PORT || 8082;
-
-app.use(express.static(__dirname + "/public"));
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: false
-}));
-app.use(cookieParser());
-app.use(validator());
-
-app.use(methodOverride("_method"));
-
-app.engine("handlebars", exphbs({
-    defaultLayout: "main"
-}));
-
-app.set("view engine", "handlebars");
-
-
-//=================================
-//      Routes
-//================================
-require("./routes/public/account-api.js")(app);
-require("./routes/private/profile-api.js")(app);
-require("./routes/private/survey-api.js")(app);
-
+var validator = require('express-validator');
+var login = require('./backend/routes/backendlogin');
+var router = express.Router();
+var login = require('./backend/routes/backendlogin');
+var bodyParser = require('body-parser');
 
 app.listen(PORT, function() {
     console.log(`App running on port: ${PORT}`);
 });
+
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+
+// test route
+router.get('/', function(req, res) {
+    res.json({ message: 'welcome to our upload module apis' });
+});
+
+//route to handle user registration
+router.post('/register',login.register);
+router.post('/login',login.login);
+
+app.use('/api', router);
+app.listen(4000);

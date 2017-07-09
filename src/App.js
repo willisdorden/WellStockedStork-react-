@@ -23,7 +23,7 @@ const styles = {
     },
     content: {
         padding: '16px',
-        backgroundColor: "white",
+        backgroundColor: "grey",
         height:910,
         width: 1405
     },

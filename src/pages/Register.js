@@ -19,19 +19,21 @@ class Register extends Component {
             first_name:'',
             last_name:'',
             email:'',
-            password:''
+            password:'',
+            username:''
         }
     }
     handleClick(event){
-        var apiBaseUrl = "http://localhost:4000/api/";
-        console.log("values",this.state.first_name,this.state.last_name,this.state.email,this.state.password);
+        const apiBaseUrl = "http://localhost:4000/api/";
+        console.log("values",this.state.first_name,this.state.last_name,this.state.email,this.state.password,this.state.username);
         //To be done:check for empty values before hitting submit
-        var self = this;
-        var payload={
+        const self = this;
+        const payload={
             "first_name": this.state.first_name,
             "last_name":this.state.last_name,
             "email":this.state.email,
-            "password":this.state.password
+            "password":this.state.password,
+            "username":this.state.username
         };
          axios.post(apiBaseUrl+'/register', payload)
              .then(function (response) {
@@ -83,6 +85,13 @@ class Register extends Component {
                             hintText="Enter your Password"
                             floatingLabelText="Password"
                             onChange = {(event,newValue) => this.setState({password:newValue})}
+                        />
+                        <br/>
+                        <TextField
+                            type ="username"
+                            hintText="Enter your Username"
+                            floatingLabelText="Username"
+                            onChange ={(event,newValue) => this.setState({username:newValue})}
                         />
                         <br/>
                         <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
