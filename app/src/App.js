@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Link,} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link,} from 'react-router-dom';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Sidebar from './sidemenu/sidemenu';
@@ -9,6 +10,7 @@ import Loginscreen  from './pages/Loginscreen';
 import Register from './pages/Registerscreen';
 import Home from './pages/home';
 import Slider from './pages/slideshow/Slider';
+import Dashboard from './pages/dashboard';
 
 import About from './pages/about';
 
@@ -37,7 +39,7 @@ class App extends Component {
         super(props);
 
         this.state = {
-
+            user: null,
             docked: false,
             open: false,
         };
@@ -45,6 +47,7 @@ class App extends Component {
 
         this.toggleOpen = this.toggleOpen.bind(this);
         this.onSetOpen = this.onSetOpen.bind(this);
+        this.login = this.login.bind(this);
     }
 
 
@@ -61,6 +64,12 @@ class App extends Component {
         if (ev) {
             ev.preventDefault();
         }
+    }
+    login(user) {
+        console.log('user::', user);
+        this.setState({
+            user,
+        })
     }
     componentWillMount(){
         var loginPage =[];
@@ -97,8 +106,9 @@ class App extends Component {
 
                       <Route exact path ="/" component={Home} />
                       <Route   path ="/about" component={About} />
-                      <Route   path ="/login" component={Loginscreen} />
+                      <Route   path ="/login" component={() => <Loginscreen onLogin={this.login} />} />
                       <Route   path ="/register" component={Register} />
+                      <Route   path ="/dashboard" component={() => <Dashboard user={this.state.user} />} />
                   </div>
               </MaterialTitlePanel>
           </Sidebar>

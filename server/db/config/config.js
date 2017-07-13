@@ -15,4 +15,5 @@ module.exports = {
         logging: false,
         seederStorage: 'sequelize',
     },
+
 };

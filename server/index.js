@@ -1,4 +1,3 @@
-
 const express = require('express');
 const bodyParser = require("body-parser");
 const logger = require("morgan");
@@ -26,3 +25,10 @@ require('./routes/apiRoutes')(app);
 app.listen(app.get('port'), () => {
     console.log(`Server listening on port ${app.get('port') }`)
 });
+
+
+
+
+
+
+

@@ -7,11 +7,15 @@ import img04 from '../img/img04.JPG';
 import Rotation from 'react-rotation';
 const styles = {
     height:610,
-    width: 1405
+    position: 'fixed',
+    top: 0,
+    zIndex: -1000,
+    backgroundColor: '#FFFEF4',
+    width: '100%'
     };
 const Home =() => {
         return(
-            <div className="Home">
+            <div className="Home" >
                 <Rotation>
                     <img  src={lincoln} style={styles}/>
                     <img  src={img01} style={styles}/>

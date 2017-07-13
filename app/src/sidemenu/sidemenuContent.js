@@ -1,7 +1,7 @@
 import React from 'react';
 import MaterialTitlePanel from './sidemenu material';
 import PropTypes from 'prop-types';
-import {BrowserRouter as Router, Route, Link,} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
 import { CSSTransitionGroup } from 'react-transition-group';
 
 
@@ -26,6 +26,9 @@ const styles = {
         height: '100%',
         backgroundColor: 'white',
     },
+    sidebarUl: {
+        listStyle: 'none'
+    }
 };
 
 const SidebarContent = (props) => {
@@ -42,13 +45,13 @@ const SidebarContent = (props) => {
     return (
         <MaterialTitlePanel title="Menu" style={style}>
             <div style={styles.content}>
-                <ul>
-                <li><Link to="/" style={styles.sidebarLink}>Home</Link></li>
+                <ul style={styles.sidebarUl}>
+                <NavLink to="/" style={styles.sidebarLink}>Home</NavLink>
                 <li><Link to="/about" style={styles.sidebarLink}>About</Link></li>
                 </ul>
                 <div style={styles.divider} />
                 {/*{links}*/}
-                <ul>
+                <ul style={styles.sidebarUl}>
                 <li><Link to="/register" style={styles.sidebarLink}>Register</Link></li>
                 <li><Link to="/login"  style={styles.sidebarLink}>Login</Link></li>
                 {/*<li><Link to="/links" style={styles.sidebarLink}>links</li>*/}

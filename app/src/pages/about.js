@@ -3,6 +3,7 @@ import React from 'react';
 const styles = {
     display: 'flex',
     justifyContent: "center"
+
 };
 
 
@@ -13,14 +14,24 @@ const Content ={
         color: "",
         display: "inline-block",
         fontFamily: "monospace",
-        fontSize: "32",
+        fontSize: "20",
         textAlign: "center",
 };
+
+const Content1={
+    top: 0,
+    zIndex: -1000,
+    backgroundColor: '#FFFEF4',
+    width: '100%'
+};
+
 
 const About = () => {
         return(
             <div className="about" style={styles}>
+                <div>
                 <h1>About:</h1>
+                <br/>
                 <p style={Content}>We’re parents, just like you. We recently had a baby and we quickly came to this realization:
                     The problem with baby stuff isn’t that you don’t know what to get.  You know exactly what you need, but there are so many choices. For everything. Hundreds of bottles. Just as many nipples. Bibs. Pacifiers. Countless car seats. Strollers that range in price from $50 to thousands. Diapers galore. Bouncers, swings, and chairs that’ll make your head spin. Toys of all types. Cribs. Bassinets. Co-sleepers. And that’s just the start! The options seem endless, so we’re here to help.
                     The Well-Stocked Stork is our brainchild. We’re Willis and Darcy, a real-life couple with a newborn son who was born the summer of 2017, more than nine years after his older sister arrived on the scene. Boy oh boy, have things changed in a decade!
@@ -30,6 +41,7 @@ const About = () => {
 
                     Willis and Darcy
                 </p>
+                </div>
             </div>
         )
 };

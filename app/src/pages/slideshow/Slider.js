@@ -4,7 +4,11 @@ import Slide from './Slide';
 import RightArrow from './RightArrow';
 import LeftArrow from './LeftArrow';
 import Dots from './Dots';
-//require('./style.scss');
+require('./style.scss');
+const styles = {
+    display: 'flex',
+    justifyContent: "center"
+};
 
 
 export default class Slider extends Component {
@@ -54,7 +58,7 @@ export default class Slider extends Component {
     render() {
 
         return (
-            <div className="slider">
+            <div className="slider" style={styles}>
                 {/* The Current Image*/}
                 {
                     this.state.ready ?

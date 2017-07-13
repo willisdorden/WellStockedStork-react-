@@ -63,8 +63,8 @@ module.exports = function(sequelize, DataTypes) {
                 associate: function (models) {
                     // Associating Account  with profile
                     // When an Account is deleted, also delete any associated profile
-                    Account.hasOne(models.Profile, {
-                        foreignKey: "AccountId",
+                    Users.hasMany(models.submittedAnswers, {
+                        foreignKey: "UsersId",
                         onDelete: "cascade"
                     });
                 },
