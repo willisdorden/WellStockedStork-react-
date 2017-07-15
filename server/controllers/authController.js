@@ -71,6 +71,21 @@ exports.userLogin = (req, res) => {
     })
 };
 
+exports.Questions =(req,res) => {
+    db.surveyQuestions.findAll({
+        where: {
+            SurveyId: 1
+        },
+        include: [{
+            model: db.surveyAnswers
+        }]
+    }).then(function(dbsurveyQuestions) {
+        res.render("questions", {
+            questions: dbsurveyQuestions
+        });
+    });
+};
+
 function generateHash(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 }

@@ -11,6 +11,7 @@ import Register from './pages/Registerscreen';
 import Home from './pages/home';
 import Slider from './pages/slideshow/Slider';
 import Dashboard from './pages/dashboard';
+import Questions from './pages/questions';
 
 import About from './pages/about';
 
@@ -109,6 +110,7 @@ class App extends Component {
                       <Route   path ="/login" component={() => <Loginscreen onLogin={this.login} />} />
                       <Route   path ="/register" component={Register} />
                       <Route   path ="/dashboard" component={() => <Dashboard user={this.state.user} />} />
+                      <Route   path="/questions"  component={() => <Questions user={this.state.user} />} />
                   </div>
               </MaterialTitlePanel>
           </Sidebar>

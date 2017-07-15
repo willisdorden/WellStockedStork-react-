@@ -26,8 +26,9 @@ const styles = {
         height: '100%',
         backgroundColor: 'white',
     },
-    sidebarUl: {
+        sidebarUl: {
         listStyle: 'none'
+
     }
 };
 

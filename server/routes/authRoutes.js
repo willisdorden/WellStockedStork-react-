@@ -6,5 +6,7 @@ module.exports = app => {
 
     app.post('/register', authController.userRegister);
 
-    app.post('/login', authController.userLogin)
+    app.post('/login', authController.userLogin);
+
+    app.post('/question', authController.Questions);
 };

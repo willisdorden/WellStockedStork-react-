@@ -24,6 +24,15 @@ const Content ={
     fontSize: "20",
     textAlign: "center",
 };
+const questionLink = {
+        listStyle: 'none',
+        display: 'block',
+        padding: '16px 0px',
+        color: '#757575',
+        textDecoration: 'none',
+};
+
+
 
 class Dashboard extends Component {
     constructor(props){
@@ -70,6 +79,7 @@ class Dashboard extends Component {
 
                     <p style ={Content}>  Now, let’s get started … </p>
             </div>
+                <li><Link to="/questions"  style={questionLink}>Question</Link></li>
             </div>
         )
     }

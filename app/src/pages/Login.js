@@ -44,7 +44,7 @@ class Login extends Component {
 
                         this.setState({redirect: true});
                         // self.setState({ user: response.data.user.id});
-                        this.props.onLogin(response.data.user.first_name);
+                        this.props.onLogin(response.data.user.id);
 
                     }
                     else if (response.status === 204) {
