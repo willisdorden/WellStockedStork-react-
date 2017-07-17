@@ -2,7 +2,10 @@ module.exports = function(sequelize, DataTypes) {
     const surveyQuestions = sequelize.define("surveyQuestions", {
         question: {
             type: DataTypes.STRING
-        }
+        },
+        callId:{
+            type: DataTypes.BOOLEAN
+        },
     }, {
         classMethods: {
             associate: function(models) {

@@ -79,7 +79,9 @@ class Dashboard extends Component {
 
                     <p style ={Content}>  Now, let’s get started … </p>
             </div>
+                <div style={Content}>
                 <li><Link to="/questions"  style={questionLink}>Question</Link></li>
+            </div>
             </div>
         )
     }

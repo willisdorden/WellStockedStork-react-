@@ -47,7 +47,7 @@ class Login extends Component {
                         this.props.onLogin(response.data.user.id);
 
                     }
-                    else if (response.status === 204) {
+                    else if (response.status === 404) {
                         console.log("Username password do not match");
                         alert("username or password is incorrect")
                     }

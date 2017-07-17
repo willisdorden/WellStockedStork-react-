@@ -8,5 +8,5 @@ module.exports = app => {
 
     app.post('/login', authController.userLogin);
 
-    app.post('/question', authController.Questions);
+    app.post('/questions', authController.Questions);
 };

@@ -11,6 +11,9 @@ module.exports = {
                 allowNull: false
 
             },
+            callId:{
+                type: Sequelize.INTEGER,
+            },
 
 
             created_at: {
