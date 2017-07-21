@@ -3,19 +3,19 @@
 module.exports = function(sequelize, DataTypes) {
     const Practicalmoms = sequelize.define("Practicalmoms", {
         name: {
-            type: DataTypes.STRING
+            type: DataTypes.TEXT
         },
         category: {
-            type: DataTypes.BOOLEAN
+            type: DataTypes.TEXT
         },
         description: {
-            type: DataTypes.STRING
+            type: DataTypes.TEXT
         },
         ImgUrl: {
-            type: DataTypes.STRING
+            type: DataTypes.TEXT
         },
         buyUrl:{
-            type: DataTypes.STRING
+            type: DataTypes.TEXT
         }
 
 

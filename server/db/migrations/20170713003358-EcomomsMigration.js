@@ -3,25 +3,25 @@ module.exports = {
     up: function (queryInterface, Sequelize) {
         return queryInterface.createTable('Ecomoms', {
             name: {
-                type: Sequelize.STRING,
-                primaryKey: true,
-                autoIncrement: true
+                type: Sequelize.TEXT,
+                allowNull:false
             },
             category: {
-                type: Sequelize.STRING,
+                type: Sequelize.TEXT,
                 allowNull: false,
 
             },
             description: {
-                type: Sequelize.STRING,
+                type: Sequelize.TEXT,
                 allowNull: false
             },
+
             imgUrl: {
-                type: Sequelize.STRING,
+                type: Sequelize.TEXT,
                 allowNull: false,
             },
             buyUrl:{
-                type:Sequelize.STRING
+                type:Sequelize.TEXT
             },
             created_at: {
                 type: Sequelize.DATE,
