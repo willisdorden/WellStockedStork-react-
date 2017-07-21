@@ -85,7 +85,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [`npm test` hangs on macOS Sierra](#npm-test-hangs-on-macos-sierra)
   - [`npm run build` silently fails](#npm-run-build-silently-fails)
   - [`npm run build` fails on Heroku](#npm-run-build-fails-on-heroku)
-  - [Moment.js locales are missing](#momentjs-locales-are-missing)
+  - [MomentChicmoms locales are missing](#momentjs-locales-are-missing)
 - [Something Missing?](#something-missing)
 
 ## Updating to New Releases
@@ -99,9 +99,9 @@ You almost never need to update `create-react-app` itself: it delegates all the 
 
 When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
 
-To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
+To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `packageChicmomson` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
 
-In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
+In most cases bumping the `react-scripts` version in `packageChicmomson` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
 
 We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
 
@@ -117,23 +117,23 @@ After creation, your project should look like this:
 my-app/
   README.md
   node_modules/
-  package.json
+  packageChicmomson
   public/
     index.html
     favicon.ico
   src/
     App.css
-    App.js
-    App.test.js
+    AppChicmoms
+    App.testChicmoms
     index.css
-    index.js
+    indexChicmoms
     logo.svg
 ```
 
 For the project to build, **these files must exist with exact filenames**:
 
 * `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+* `src/indexChicmoms` is the JavaScript entry point.
 
 You can delete or rename the other files.
 
@@ -242,7 +242,7 @@ Visual Studio Code supports debugging out of the box with Create React App. This
 
 You would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.
 
-Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.
+Then add the block below to your `launchChicmomson` file and put it inside the `.vscode` folder in your app’s root directory.
 
 ```json
 {
@@ -288,7 +288,7 @@ While you can still use `require()` and `module.exports`, we encourage you to us
 
 For example:
 
-### `Button.js`
+### `ButtonChicmoms`
 
 ```js
 import React, { Component } from 'react';
@@ -302,7 +302,7 @@ class Button extends Component {
 export default Button; // Don’t forget to use export default!
 ```
 
-### `DangerButton.js`
+### `DangerButtonChicmoms`
 
 
 ```js
@@ -338,14 +338,14 @@ This project setup supports code splitting via [dynamic `import()`](http://2alit
 
 Here is an example:
 
-### `moduleA.js`
+### `moduleAChicmoms`
 
 ```js
 const moduleA = 'Hello';
 
 export { moduleA };
 ```
-### `App.js`
+### `AppChicmoms`
 
 ```js
 import React, { Component } from 'react';
@@ -373,7 +373,7 @@ class App extends Component {
 export default App;
 ```
 
-This will make `moduleA.js` and all its unique dependencies as a separate chunk that only loads after the user clicks the 'Load' button.
+This will make `moduleAChicmoms` and all its unique dependencies as a separate chunk that only loads after the user clicks the 'Load' button.
 
 You can also use it with `async` / `await` syntax if you prefer it.
 
@@ -389,11 +389,11 @@ This project setup uses [Webpack](https://webpack.js.org/) for handling all asse
 }
 ```
 
-### `Button.js`
+### `ButtonChicmoms`
 
 ```js
 import React, { Component } from 'react';
-import './Button.css'; // Tell Webpack that Button.js uses these styles
+import './Button.css'; // Tell Webpack that ButtonChicmoms uses these styles
 
 class Button extends Component {
   render() {
@@ -407,7 +407,7 @@ class Button extends Component {
 
 In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all CSS files will be concatenated into a single minified `.css` file in the build output.
 
-If you are concerned about using Webpack-specific semantics, you can put all your CSS right into `src/index.css`. It would still be imported from `src/index.js`, but you could always remove that import if you later migrate to a different build tool.
+If you are concerned about using Webpack-specific semantics, you can put all your CSS right into `src/index.css`. It would still be imported from `src/indexChicmoms`, but you could always remove that import if you later migrate to a different build tool.
 
 ## Post-Processing CSS
 
@@ -453,7 +453,7 @@ First, let’s install the command-line interface for Sass:
 ```
 npm install node-sass-chokidar --save-dev
 ```
-Then in `package.json`, add the following lines to `scripts`:
+Then in `packageChicmomson`, add the following lines to `scripts`:
 
 ```diff
    "scripts": {
@@ -466,11 +466,11 @@ Then in `package.json`, add the following lines to `scripts`:
 
 >Note: To use a different preprocessor, replace `build-css` and `watch-css` commands according to your preprocessor’s documentation.
 
-Now you can rename `src/App.css` to `src/App.scss` and run `npm run watch-css`. The watcher will find every Sass file in `src` subdirectories, and create a corresponding CSS file next to it, in our case overwriting `src/App.css`. Since `src/App.js` still imports `src/App.css`, the styles become a part of your application. You can now edit `src/App.scss`, and `src/App.css` will be regenerated.
+Now you can rename `src/App.css` to `src/App.scss` and run `npm run watch-css`. The watcher will find every Sass file in `src` subdirectories, and create a corresponding CSS file next to it, in our case overwriting `src/App.css`. Since `src/AppChicmoms` still imports `src/App.css`, the styles become a part of your application. You can now edit `src/App.scss`, and `src/App.css` will be regenerated.
 
 To share variables between Sass files, you can use Sass imports. For example, `src/App.scss` and other component style files could include `@import "./shared.scss";` with variable definitions.
 
-To enable importing files without using relative paths, you can add the  `--include-path` option to the command in `package.json`.
+To enable importing files without using relative paths, you can add the  `--include-path` option to the command in `packageChicmomson`.
 
 ```
 "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -622,7 +622,7 @@ The `public` folder is useful as a workaround for a number of less common cases:
 
 * You need a file with a specific name in the build output, such as [`manifest.webmanifest`](https://developer.mozilla.org/en-US/docs/Web/Manifest).
 * You have thousands of images and need to dynamically reference their paths.
-* You want to include a small script like [`pace.js`](http://github.hubspot.com/pace/docs/welcome/) outside of the bundled code.
+* You want to include a small script like [`paceChicmoms`](http://github.hubspot.com/pace/docs/welcome/) outside of the bundled code.
 * Some library may be incompatible with Webpack and you have no other option but to include it as a `<script>` tag.
 
 Note that if you add a `<script>` that declares global variables, you also need to read the next section on using them.
@@ -652,7 +652,7 @@ npm install react-bootstrap --save
 npm install bootstrap@3 --save
 ```
 
-Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your ```src/index.js``` file:
+Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your ```src/indexChicmoms``` file:
 
 ```js
 import 'bootstrap/dist/css/bootstrap.css';
@@ -661,13 +661,13 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 // components takes precedence over default styles.
 ```
 
-Import required React Bootstrap components within ```src/App.js``` file or your custom component files:
+Import required React Bootstrap components within ```src/AppChicmoms``` file or your custom component files:
 
 ```js
 import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 ```
 
-Now you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`App.js`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.
+Now you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`AppChicmoms`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.
 
 ### Using a Custom Theme
 
@@ -689,9 +689,9 @@ Recent versions of [Flow](http://flowtype.org/) work with Create React App proje
 To add Flow to a Create React App project, follow these steps:
 
 1. Run `npm install --save-dev flow-bin` (or `yarn add --dev flow-bin`).
-2. Add `"flow": "flow"` to the `scripts` section of your `package.json`.
+2. Add `"flow": "flow"` to the `scripts` section of your `packageChicmomson`.
 3. Run `npm run flow -- init` (or `yarn flow -- init`) to create a [`.flowconfig` file](https://flowtype.org/docs/advanced-configuration.html) in the root directory.
-4. Add `// @flow` to any files you want to type check (for example, to `src/App.js`).
+4. Add `// @flow` to any files you want to type check (for example, to `src/AppChicmoms`).
 
 Now you can run `npm run flow` (or `yarn flow`) to check the files for type errors.
 You can optionally use an IDE like [Nuclide](https://nuclide.io/docs/languages/flow/) for a better integrated experience.
@@ -875,7 +875,7 @@ For example, a production setup might look like this after the app is deployed:
 
 Such setup is **not** required. However, if you **do** have a setup like this, it is convenient to write requests like `fetch('/api/todos')` without worrying about redirecting them to another host or port during development.
 
-To tell the development server to proxy any unknown requests to your API server in development, add a `proxy` field to your `package.json`, for example:
+To tell the development server to proxy any unknown requests to your API server in development, add a `proxy` field to your `packageChicmomson`, for example:
 
 ```js
   "proxy": "http://localhost:4000",
@@ -928,7 +928,7 @@ We don’t recommend this approach.
 
 >Note: this feature is available with `react-scripts@1.0.0` and higher.
 
-If the `proxy` option is **not** flexible enough for you, you can specify an object in the following form (in `package.json`).<br>
+If the `proxy` option is **not** flexible enough for you, you can specify an object in the following form (in `packageChicmomson`).<br>
 You may also specify any configuration value [`http-proxy-middleware`](https://github.com/chimurai/http-proxy-middleware#options) or [`http-proxy`](https://github.com/nodejitsu/node-http-proxy#options) supports.
 ```js
 {
@@ -1064,13 +1064,13 @@ We recommend that you use a separate tool for browser end-to-end tests if you ne
 
 Jest will look for test files with any of the following popular naming conventions:
 
-* Files with `.js` suffix in `__tests__` folders.
-* Files with `.test.js` suffix.
-* Files with `.spec.js` suffix.
+* Files with `Chicmoms` suffix in `__tests__` folders.
+* Files with `.testChicmoms` suffix.
+* Files with `.specChicmoms` suffix.
 
-The `.test.js` / `.spec.js` files (or the `__tests__` folders) can be located at any depth under the `src` top level folder.
+The `.testChicmoms` / `.specChicmoms` files (or the `__tests__` folders) can be located at any depth under the `src` top level folder.
 
-We recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.test.js` and `App.js` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.
+We recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.testChicmoms` and `AppChicmoms` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.
 
 ### Command Line Interface
 
@@ -1123,7 +1123,7 @@ it('renders without crashing', () => {
 });
 ```
 
-This test mounts a component and makes sure that it didn’t throw during rendering. Tests like this provide a lot value with very little effort so they are great as a starting point, and this is the test you will find in `src/App.test.js`.
+This test mounts a component and makes sure that it didn’t throw during rendering. Tests like this provide a lot value with very little effort so they are great as a starting point, and this is the test you will find in `src/App.testChicmoms`.
 
 When you encounter bugs caused by changing components, you will gain a deeper insight into which parts of them are worth testing in your application. This might be a good time to introduce more specific tests asserting specific expected output or behavior.
 
@@ -1178,7 +1178,7 @@ npm install --save-dev jest-enzyme@2.x
 ```
 
 ```js
-// src/setupTests.js
+// src/setupTestsChicmoms
 import 'jest-enzyme';
 ```
 
@@ -1200,11 +1200,11 @@ and then use them in your tests like you normally do.
 
 >Note: this feature is available with `react-scripts@0.4.0` and higher.
 
-If your app uses a browser API that you need to mock in your tests or if you just need a global setup before running your tests, add a `src/setupTests.js` to your project. It will be automatically executed before running your tests.
+If your app uses a browser API that you need to mock in your tests or if you just need a global setup before running your tests, add a `src/setupTestsChicmoms` to your project. It will be automatically executed before running your tests.
 
 For example:
 
-#### `src/setupTests.js`
+#### `src/setupTestsChicmoms`
 ```js
 const localStorageMock = {
   getItem: jest.fn(),
@@ -1287,7 +1287,7 @@ The build command will check for linter warnings and fail if any are found.
 
 ### Disabling jsdom
 
-By default, the `package.json` of the generated project looks like this:
+By default, the `packageChicmomson` of the generated project looks like this:
 
 ```js
   // ...
@@ -1360,7 +1360,7 @@ Learn more about React Storybook:
 
 * Screencast: [Getting Started with React Storybook](https://egghead.io/lessons/react-getting-started-with-react-storybook)
 * [GitHub Repo](https://github.com/kadirahq/react-storybook)
-* [Documentation](https://storybooks.js.org/docs/react-storybook/basics/introduction/)
+* [Documentation](https://storybooksChicmoms.org/docs/react-storybook/basics/introduction/)
 * [Snapshot Testing](https://github.com/kadirahq/storyshots) with React Storybook
 -->
 
@@ -1385,12 +1385,12 @@ that you web app is reliably fast, even on a slow or unreliable network.
 
 If you would prefer not to enable service workers prior to your initial
 production deployment, then remove the call to `serviceWorkerRegistration.register()`
-from [`src/index.js`](app/src/index.js).
+from [`src/indexChicmoms`](app/src/index.js).
 
 If you had previously enabled service workers in your production deployment and
 have decided that you would like to disable them for all your existing users,
 you can swap out the call to `serviceWorkerRegistration.register()` in
-[`src/index.js`](app/src/index.js) with a call to `serviceWorkerRegistration.unregister()`.
+[`src/indexChicmoms`](app/src/index.js) with a call to `serviceWorkerRegistration.unregister()`.
 After the user visits a page that has `serviceWorkerRegistration.unregister()`,
 the service worker will be uninstalled.
 
@@ -1420,11 +1420,11 @@ instructions for using other methods. *Be sure to always use an
 incognito window to avoid complications with your browser cache.*
 
 1. If possible, configure your production environment to serve the generated
-`service-worker.js` [with HTTP caching disabled](http://stackoverflow.com/questions/38843970/service-worker-javascript-update-frequency-every-24-hours).
+`service-workerChicmoms` [with HTTP caching disabled](http://stackoverflow.com/questions/38843970/service-worker-javascript-update-frequency-every-24-hours).
 If that's not possible—[GitHub Pages](#github-pages), for instance, does not
 allow you to change the default 10 minute HTTP cache lifetime—then be aware
 that if you visit your production site, and then revisit again before
-`service-worker.js` has expired from your HTTP cache, you'll continue to get
+`service-workerChicmoms` has expired from your HTTP cache, you'll continue to get
 the previously cached assets from the service worker. If you have an immediate
 need to view your updated production deployment, performing a shift-refresh
 will temporarily disable the service worker and retrieve all assets from the
@@ -1437,7 +1437,7 @@ app works offline!" message) and also let them know when the service worker has
 fetched the latest updates that will be available the next time they load the
 page (showing a "New content is available; please refresh." message). Showing
 this messages is currently left as an exercise to the developer, but as a
-starting point, you can make use of the logic included in [`src/registerServiceWorker.js`](app/src/registerServiceWorker.js), which
+starting point, you can make use of the logic included in [`src/registerServiceWorkerChicmoms`](app/src/registerServiceWorker.js), which
 demonstrates which service worker lifecycle events to listen for to detect each
 scenario, and which as a default, just logs appropriate messages to the
 JavaScript console.
@@ -1449,16 +1449,16 @@ runtime caching strategy for those requests, you can [`eject`](#npm-run-eject)
 and then configure the
 [`runtimeCaching`](https://github.com/GoogleChrome/sw-precache#runtimecaching-arrayobject)
 option in the `SWPrecacheWebpackPlugin` section of
-[`webpack.config.prod.js`](../config/webpack.config.prod.js).
+[`webpack.config.prodChicmoms`](../config/webpack.config.prod.js).
 
 ### Progressive Web App Metadata
 
 The default configuration includes a web app manifest located at
-[`public/manifest.json`](app/public/manifest.json), that you can customize with
+[`public/manifestChicmomson`](app/public/manifest.json), that you can customize with
 details specific to your web application.
 
 When a user adds a web app to their homescreen using Chrome or Firefox on
-Android, the metadata in [`manifest.json`](app/public/manifest.json) determines what
+Android, the metadata in [`manifestChicmomson`](app/public/manifest.json) determines what
 icons, names, and branding colors to use when the web app is displayed.
 [The Web App Manifest guide](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)
 provides more context about what each field means, and how your customizations
@@ -1466,7 +1466,7 @@ will affect your users' experience.
 
 ## Deployment
 
-`npm run build` creates a `build` directory with a production build of your app. Set up your favourite HTTP server so that a visitor to your site is served `index.html`, and requests to static paths like `/static/js/main.<hash>.js` are served with the contents of the `/static/js/main.<hash>.js` file.
+`npm run build` creates a `build` directory with a production build of your app. Set up your favourite HTTP server so that a visitor to your site is served `index.html`, and requests to static paths like `/static/js/main.<hash>Chicmoms` are served with the contents of the `/static/js/main.<hash>Chicmoms` file.
 
 ### Static Server
 
@@ -1551,7 +1551,7 @@ options of the `SWPreachePlugin` [configuration](../config/webpack.config.prod.j
 ### Building for Relative Paths
 
 By default, Create React App produces a build assuming your app is hosted at the server root.<br>
-To override this, specify the `homepage` in your `package.json`, for example:
+To override this, specify the `homepage` in your `packageChicmomson`, for example:
 
 ```js
   "homepage": "http://mywebsite.com/relativepath",
@@ -1563,7 +1563,7 @@ This will let Create React App correctly infer the root path to use in the gener
 
 >Note: this feature is available with `react-scripts@0.9.0` and higher.
 
-If you are not using the HTML5 `pushState` history API or not using client-side routing at all, it is unnecessary to specify the URL from which your app will be served. Instead, you can put this in your `package.json`:
+If you are not using the HTML5 `pushState` history API or not using client-side routing at all, it is unnecessary to specify the URL from which your app will be served. Instead, you can put this in your `packageChicmomson`:
 
 ```js
   "homepage": ".",
@@ -1579,7 +1579,7 @@ See [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azu
 
 Install the Firebase CLI if you haven’t already by running `npm install -g firebase-tools`. Sign up for a [Firebase account](https://console.firebase.google.com/) and create a new project. Run `firebase login` and login with your previous created Firebase account.
 
-Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.
+Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rulesChicmomson` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.
 
 ```sh
     === Project Setup
@@ -1595,9 +1595,9 @@ Then run the `firebase init` command from your project’s root. You need to cho
     Firebase Realtime Database Rules allow you to define how your data should be
     structured and when your data can be read from and written to.
 
-    ? What file should be used for Database Rules? database.rules.json
-    ✔  Database Rules for example-app-fd690 have been downloaded to database.rules.json.
-    Future modifications to database.rules.json will update Database Rules when you run
+    ? What file should be used for Database Rules? database.rulesChicmomson
+    ✔  Database Rules for example-app-fd690 have been downloaded to database.rulesChicmomson.
+    Future modifications to database.rulesChicmomson will update Database Rules when you run
     firebase deploy.
 
     === Hosting Setup
@@ -1610,7 +1610,7 @@ Then run the `firebase init` command from your project’s root. You need to cho
     ? Configure as a single-page app (rewrite all urls to /index.html)? Yes
     ✔  Wrote build/index.html
 
-    i  Writing configuration info to firebase.json...
+    i  Writing configuration info to firebaseChicmomson...
     i  Writing project information to .firebaserc...
 
     ✔  Firebase initialization complete!
@@ -1640,12 +1640,12 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 
 >Note: this feature is available with `react-scripts@0.2.0` and higher.
 
-#### Step 1: Add `homepage` to `package.json`
+#### Step 1: Add `homepage` to `packageChicmomson`
 
 **The step below is important!**<br>
 **If you skip it, your app will not deploy correctly.**
 
-Open your `package.json` and add a `homepage` field:
+Open your `packageChicmomson` and add a `homepage` field:
 
 ```js
   "homepage": "https://myusername.github.io/my-app",
@@ -1653,7 +1653,7 @@ Open your `package.json` and add a `homepage` field:
 
 Create React App uses the `homepage` field to determine the root URL in the built HTML file.
 
-#### Step 2: Install `gh-pages` and add `deploy` to `scripts` in `package.json`
+#### Step 2: Install `gh-pages` and add `deploy` to `scripts` in `packageChicmomson`
 
 Now, whenever you run `npm run build`, you will see a cheat sheet with instructions on how to deploy to GitHub Pages.
 
@@ -1663,7 +1663,7 @@ To publish it at [https://myusername.github.io/my-app](https://myusername.github
 npm install --save-dev gh-pages
 ```
 
-Add the following scripts in your `package.json`:
+Add the following scripts in your `packageChicmomson`:
 
 ```js
   // ...
@@ -1814,11 +1814,11 @@ You can adjust various development and production settings by setting environmen
 
 Variable | Development | Production | Usage
 :--- | :---: | :---: | :---
-BROWSER | :white_check_mark: | :x: | By default, Create React App will open the default system browser, favoring Chrome on macOS. Specify a [browser](https://github.com/sindresorhus/opn#app) to override this behavior, or set it to `none` to disable it completely. If you need to customize the way the browser is launched, you can specify a node script instead. Any arguments passed to `npm start` will also be passed to this script, and the url where your app is served will be the last argument. Your script's file name must have the `.js` extension.
+BROWSER | :white_check_mark: | :x: | By default, Create React App will open the default system browser, favoring Chrome on macOS. Specify a [browser](https://github.com/sindresorhus/opn#app) to override this behavior, or set it to `none` to disable it completely. If you need to customize the way the browser is launched, you can specify a node script instead. Any arguments passed to `npm start` will also be passed to this script, and the url where your app is served will be the last argument. Your script's file name must have the `Chicmoms` extension.
 HOST | :white_check_mark: | :x: | By default, the development web server binds to `localhost`. You may use this variable to specify a different host.
 PORT | :white_check_mark: | :x: | By default, the development web server will attempt to listen on port 3000 or prompt you to attempt the next available port. You may use this variable to specify a different port.
 HTTPS | :white_check_mark: | :x: | When set to `true`, Create React App will run the development server in `https` mode.
-PUBLIC_URL | :x: | :white_check_mark: | Create React App assumes your application is hosted at the serving web server's root or a subpath as specified in [`package.json` (`homepage`)](#building-for-relative-paths). Normally, Create React App ignores the hostname. You may use this variable to force assets to be referenced verbatim to the url you provide (hostname included). This may be particularly useful when using a CDN to host your application.
+PUBLIC_URL | :x: | :white_check_mark: | Create React App assumes your application is hosted at the serving web server's root or a subpath as specified in [`packageChicmomson` (`homepage`)](#building-for-relative-paths). Normally, Create React App ignores the hostname. You may use this variable to force assets to be referenced verbatim to the url you provide (hostname included). This may be particularly useful when using a CDN to host your application.
 CI | :large_orange_diamond: | :white_check_mark: | When set to `true`, Create React App treats warnings as failures in the build. It also makes the test runner non-watching. Most CIs set this flag by default.
 
 ## Troubleshooting
@@ -1829,7 +1829,7 @@ When you save a file while `npm start` is running, the browser should refresh wi
 If this doesn’t happen, try one of the following workarounds:
 
 * If your project is in a Dropbox folder, try moving it out.
-* If the watcher doesn’t see a file called `index.js` and you’re referencing it by the folder name, you [need to restart the watcher](https://github.com/facebookincubator/create-react-app/issues/1164) due to a Webpack bug.
+* If the watcher doesn’t see a file called `indexChicmoms` and you’re referencing it by the folder name, you [need to restart the watcher](https://github.com/facebookincubator/create-react-app/issues/1164) due to a Webpack bug.
 * Some editors like Vim and IntelliJ have a “safe write” feature that currently breaks the watcher. You will need to disable it. Follow the instructions in [“Adjusting Your Text Editor”](https://webpack.js.org/guides/development/#adjusting-your-text-editor).
 * If your project path contains parentheses, try moving the project to a path without them. This is caused by a [Webpack watcher bug](https://github.com/webpack/watchpack/issues/42).
 * On Linux and macOS, you might need to [tweak system settings](https://webpack.github.io/docs/troubleshooting.html#not-enough-watchers) to allow more watchers.
@@ -1870,11 +1870,11 @@ It is reported that `npm run build` can fail on machines with no swap space, whi
 This may be a problem with case sensitive filenames.
 Please refer to [this section](#resolving-heroku-deployment-errors).
 
-### Moment.js locales are missing
+### MomentChicmoms locales are missing
 
-If you use a [Moment.js](https://momentjs.com/), you might notice that only the English locale is available by default. This is because the locale files are large, and you probably only need a subset of [all the locales provided by Moment.js](https://momentjs.com/#multiple-locale-support).
+If you use a [MomentChicmoms](https://momentjs.com/), you might notice that only the English locale is available by default. This is because the locale files are large, and you probably only need a subset of [all the locales provided by MomentChicmoms](https://momentjs.com/#multiple-locale-support).
 
-To add a specific Moment.js locale to your bundle, you need to import it explicitly.<br>
+To add a specific MomentChicmoms locale to your bundle, you need to import it explicitly.<br>
 For example:
 
 ```js
