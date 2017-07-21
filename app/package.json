@@ -9,6 +9,7 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-motion": "^0.5.0",
+    "react-radio-group": "^3.0.2",
     "react-rotation": "^1.2.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",

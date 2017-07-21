@@ -22,9 +22,16 @@ require('./routes/authRoutes')(app);
 //require all api routes. User needs to be authenticated to use these routes
 require('./routes/apiRoutes')(app);
 
+const db = require("./db/models");
+// db.sequelize.sync({force:true}).then(()=>{
+//     app.listen(app.get('port'), () => {
+//         console.log(`Server listening on port ${app.get('port') }`)
+//     });
+// });
+
 app.listen(app.get('port'), () => {
-    console.log(`Server listening on port ${app.get('port') }`)
-});
+     console.log(`Server listening on port ${app.get('port') }`)
+ });
 
 
 

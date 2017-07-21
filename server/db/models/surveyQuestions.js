@@ -6,17 +6,17 @@ module.exports = function(sequelize, DataTypes) {
         callId:{
             type: DataTypes.BOOLEAN
         },
-    }, {
-        classMethods: {
-            associate: function(models) {
-                surveyQuestions.hasMany(models.surveyAnswers, {
-                    foreignKey: 'SurveyQuestionId',
-                    onDelete: "cascade"
-                });
-
-            }
-        },
-        underscored: true,
     });
+
+            surveyQuestions.associate= function(models) {
+                surveyQuestions.hasMany(models.surveyAnswers, {
+                    foreignKey: {
+                        name: 'SurveyQuestionId',
+                        foreignKeyConstraint: true,
+                        onDelete: "cascade"
+                    },
+                });
+            };
+
     return surveyQuestions;
 };

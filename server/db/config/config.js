@@ -8,6 +8,10 @@ module.exports = {
         dialect: 'mysql',
         logging: console.log,
         seederStorage: 'sequelize',
+        define: {
+            timestamps: false
+        }
+
     },
     production: {
         use_env_variable: 'JAWSDB_URL',

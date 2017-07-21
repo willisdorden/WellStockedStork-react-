@@ -28,7 +28,7 @@ const questionLink = {
         listStyle: 'none',
         display: 'block',
         padding: '16px 0px',
-        color: '#757575',
+        // color: '#757575',
         textDecoration: 'none',
 };
 
@@ -48,6 +48,8 @@ class Dashboard extends Component {
             this.setState({redirect: true});
         }
     }
+
+
 
 
 
@@ -78,10 +80,11 @@ class Dashboard extends Component {
                     <p style ={Content}>  We can’t wait to help you stock up for your new addition!</p>
 
                     <p style ={Content}>  Now, let’s get started … </p>
-            </div>
-                <div style={Content}>
-                <li><Link to="/questions"  style={questionLink}>Question</Link></li>
-            </div>
+                    <li><Link to="/questions"  style={questionLink}>Question</Link></li>
+
+                </div>
+
+                {/*<li><Link to="/questions"  style={questionLink}>Question</Link></li>*/}
             </div>
         )
     }

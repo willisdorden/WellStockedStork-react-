@@ -77,9 +77,9 @@ exports.Questions = (req,res) => {
             callId: 1,
         },
 
-        include: [{
-            model: db.surveyAnswers
-          }]
+          include: [{
+             model: db.surveyAnswers
+            }]
     }).then(function(surveyQuestions) {
         res.status(200).json({
             success: true,

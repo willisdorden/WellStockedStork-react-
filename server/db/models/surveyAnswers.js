@@ -7,19 +7,21 @@ module.exports = function(sequelize, DataTypes) {
         value: {
             type: DataTypes.INTEGER,
             allowNull: false
-        }
-    }, {
-        classMethods: {
-            associate: function(models) {
-                surveyAnswers.belongsTo(models.surveyQuestions, {
-                    foreignKey: 'SurveyQuestionId',
-                    allowNull: true
-
-                });
-
-            }
         },
-        underscored: true,
     });
+
+
+    surveyAnswers.associate = function (models) {
+        surveyAnswers.belongsTo(models.surveyQuestions, {
+            foreignKey: {
+                name: 'SurveyQuestionId',
+                foreignKeyConstraint: true,
+                allowNull: false
+            },
+        });
+
+    };
+
     return surveyAnswers;
 };
+
