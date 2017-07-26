@@ -244,6 +244,84 @@ exports.chicnursery =(req,res) => {
     })
 };
 
+exports.practicalgrooming =(req,res) => {
+    db.Practicalmoms.findAll({
+        where:{
+            callid: 1,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.practicalforfun =(req,res) => {
+    db.Practicalmoms.findAll({
+        where:{
+            callid: 2,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.practicalhandyhelper =(req,res) => {
+    db.Practicalmoms.findAll({
+        where:{
+            callid: 3,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.practicalkitchen =(req,res) => {
+    db.Practicalmoms.findAll({
+        where:{
+            callid: 4,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.practicalnecessities =(req,res) => {
+    db.Practicalmoms.findAll({
+        where:{
+            callid: 5,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.practicalnursery =(req,res) => {
+    db.Practicalmoms.findAll({
+        where:{
+            callid: 6,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
 
 function generateHash(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);

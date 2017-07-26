@@ -57,7 +57,7 @@ const SidebarContent = (props) => {
                     <li><Link to="/login"  style={styles.sidebarLink}>Login</Link></li>
                     <li><Link to="/ecomom" style={styles.sidebarLink}>Ecomom</Link></li>
                     <li><Link to="/chicmom" style={styles.sidebarLink}>Chicmom</Link></li>
-                    {/*<li><Link to="/practicalmom" style={styles.sidebarLink}>practicalmom</Link></li>*/}
+                    <li><Link to="/practicalmom" style={styles.sidebarLink}>Practicalmom</Link></li>
                 </ul>
 
             </div>

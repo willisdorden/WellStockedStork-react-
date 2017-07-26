@@ -34,4 +34,16 @@ module.exports = app => {
 
     app.post('/chicmom/nursery', authController.chicnursery);
 
+    app.post('/practical/bathingandgrooming', authController.practicalgrooming);
+
+    app.post('/practical/forfun', authController.practicalforfun);
+
+    app.post('/practical/handyhelper', authController.practicalhandyhelper);
+
+    app.post('/practical/kitchen', authController.practicalkitchen);
+
+    app.post('/practical/necessities', authController.practicalnecessities);
+
+    app.post('/practical/nursery', authController.practicalnursery);
+
 };

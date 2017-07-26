@@ -25,6 +25,13 @@ import ChichandyHelper from './pages/chicmom/chichandyhelper';
 import Chickitchen from './pages/chicmom/chickitchen';
 import Chicnecessities from './pages/chicmom/chicnecessities';
 import Chicnursery from './pages/chicmom/chicnursery';
+import Practicalmom from './pages/practicalmom/Practicalmom';
+import Practicalbathingandgrooming from './pages/practicalmom/practicalbathingandgrooming';
+import Practicalforfun from './pages/practicalmom/practicalforfun';
+import PracticalhandyHelper from './pages/practicalmom/practicalhandyhelper';
+import Practicalkitchen from './pages/practicalmom/practicalkitchen';
+import Practicalnecessities from './pages/practicalmom/practicalnecessities';
+import Practicalnursery from './pages/practicalmom/practicalnursery';
 
 
 import './App.css';
@@ -138,6 +145,14 @@ class App extends Component {
                       <Route   path="/chicmom/necessities" component={() => <Chicnecessities user={this.state.user} />} />
                       <Route   path="/chicmom/nursery" component={() => <Chicnursery user={this.state.user} />} />
                       {/*<Route   path="/chicmom/onthemove" component={chicmom} />*/}
+                      <Route   path="/practicalmom" component={Practicalmom} />
+                      <Route   path="/practicalmom/bathingandgrooming" component={() => <Practicalbathingandgrooming user={this.state.user} />} />
+                      <Route   path="/practicalmom/forfun" component= {() => <Practicalforfun user={this.state.user} />} />
+                      <Route   path="/practicalmom/handyhelper" component={() => <PracticalhandyHelper user={this.state.user} />} />
+                      <Route   path="/practicalmom/kitchen" component={() => <Practicalkitchen user={this.state.user} />} />
+                      <Route   path="/practicalmom/necessities" component={() => <Practicalnecessities user={this.state.user} />} />
+                      <Route   path="/practicalmom/nursery" component={() => <Practicalnursery user={this.state.user} />} />
+                      {/*<Route   path="/practical/onthemove" component={Practical} />*/}
 
 
                   </div>

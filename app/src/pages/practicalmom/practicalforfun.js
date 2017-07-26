@@ -1,13 +1,7 @@
 
 
+
 import React, { Component } from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Redirect,
-    withRouter
-} from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -49,7 +43,7 @@ const Content ={
     textAlign: "center",
 };
 
-class Practicalbathingandgrooming extends Component {
+class Practicalforfun extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -61,7 +55,7 @@ class Practicalbathingandgrooming extends Component {
 
     componentDidMount() {
         console.log(this.props.user);
-        axios.post('/practical/bathingandgrooming')
+        axios.post('/practical/forfun')
             .then((response) => {
                 console.log(response);
                 if (response.status === 200) {
@@ -84,14 +78,13 @@ class Practicalbathingandgrooming extends Component {
 
             <div style={styles}>
                 <div>
-                    <h1 style={Mom}>Bathing & Grooming</h1>
+                    <h1 style={Mom}>For Fun</h1>
                     <br/>
                     {this.state.products.map((quest) => (
                         <p style={Content} key={quest.id}> name: {quest.name}
                             <br/>
                             <br/>
                             <img style={img} src={quest.ImgUrl} />.
-
                             <br/>
                             <br/>
                             Description:<br/>
@@ -110,5 +103,5 @@ class Practicalbathingandgrooming extends Component {
 
     }
 }
-export default Practicalbathingandgrooming;
+export default Practicalforfun;
 
