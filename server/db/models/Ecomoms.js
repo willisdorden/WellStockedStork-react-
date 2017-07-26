@@ -2,6 +2,9 @@
 
 module.exports = function(sequelize, DataTypes) {
     const Ecomoms = sequelize.define("Ecomoms", {
+        callId:{
+            type: DataTypes.BOOLEAN
+        },
         name: {
             type: DataTypes.TEXT
         },

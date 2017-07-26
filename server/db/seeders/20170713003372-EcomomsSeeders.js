@@ -5,6 +5,7 @@ module.exports = {
     up: function (queryInterface, Sequelize) {
 
         queryInterface.bulkInsert('Ecomoms', [{
+            callid:1,
             name:"Summer Infant Complete Nursery Care Kit",
             category: "Bathing & Grooming" ,
             description:"The Complete Nursery Care Kit includes 21 grooming and health care items essential for any nursery. A durable storage case is included so parents can keep each item conveniently close at hand at home or on-the-go.",
@@ -13,6 +14,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:1,
             name:"USDA Organic Baby Diaper Rash Ointment",
             category: "Bathing & Grooming" ,
             description:"For new born infants and up. Using only ingredients, Greenicare baby diaper ointment helps to nourish and recondition the soft and sensitive skin of new-born infants, soothing any irritations or rashes that may be caused by the pressure from diapers, providing relief for your child's sensitive skin.",
@@ -21,6 +23,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:1,
             name:"Puracy Natural Baby Shampoo & Body Wash",
             category: "Bathing & Grooming" ,
             description:"Puracy Natural Baby Shampoo & Body Wash is a gentle blend of clinical-grade cleansers, emollients, and a dash of essential oils.Featuring Coco Glycinate, the gentlest natural (coconut-based) cleanser available, your child will be clean and irritant-free during bath time. Our world-class blend of ingredients also includes Himalayan Pink Sea Salt, a natural mineral which hydrates and balances your baby's skin. Enjoy the soft, refreshing aromas while cleansing away the day's messes.",
@@ -29,6 +32,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:2,
             name:"Eco-friendly Crawling Pad",
             category: "For Fun" ,
             description:"",
@@ -37,6 +41,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"Eco Swaddling Blanket in Winter White",
             category: "Handy Helper" ,
             description:"This Eco Swaddling Blanket is made with oxygen bleached 100% Organic Cotton Fleece that is so soft and cozy!.Perfectly pure just like a newborn babe! A perfect blanket for the cooler seasons!",
@@ -45,6 +50,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"Ultrasonic Cool and Warm Mist Humidifiers",
             category: "Handy Helper" ,
             description:"Ultrasonic Cool and Warm Mist Alternative- marsboy Ultrasonic Cool and Warm Mist Humidifiers can provide you both cool mist in summer and warm mist in winter! Adjustable mist output, choose whatever you like all year around! Refresh your home and office efficiently!",
@@ -53,6 +59,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"White Noise App",
             category: "Handy Helper" ,
             description:"Pick your favorite sound to relax and calm your mind.  Listen to pouring rain, crashing waves on a beach, or create your own perfect soundscape.",
@@ -61,6 +68,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Evenflo Feeding Classic Glass Twist Bottles",
             category: "Kitchen" ,
             description:"With a new twist on an iconic classic, Evenflo feeding's glass bottle offers style on top of superior sanitizing, recycling, and sustainability . The tempered glass bottle includes a classic slow flow soft silicone nipple with micro air vents to help prevent nipple collapse.",
@@ -69,6 +77,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Medela Breastmilk Bottle Set",
             category: "Kitchen" ,
             description:"Medela polypropylene breast milk bottles are made without BPA, designed to retain breast milk's beneficial properties. Compatible with all Medela breast pumps, so you can pump, store and feed with one container. Great for long term storage. Dishwasher safe. Measure the exact amount of milk you're pumping with the ounce and millimeter markers. Screw on lids for leak proof storage, travel and freezing. Travel cap keeps nipple clean. Includes (3) bottles; (3) wide based medium-flow nipples; (3) collars, solid lids & caps.",
@@ -77,6 +86,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Bambu Baby's Feeding Spoons",
             category: "Kitchen" ,
             description:"The award-winning bambu KIDS collection offers the benefits of bamboo in a range of safe feeding products, free from dyes and chemicals, designed and sized for small hands and mouths. The handle is designed for parents while the feeding end is designed for baby-sized mouths. These feeding spoons smooth natural surface come in a set of 2. This way you can throw a few in your purse, a few in your drawer, and probably a few behind the couch. Made by bambu, a values-driven company focused on renewable materials and sustainable business practices",
@@ -85,6 +95,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Stokke Tripp Trapp Baby Set",
             category: "Kitchen" ,
             description:"The Baby Set™ can easily be attached to the Tripp Trapp® chair to allow a baby as young as six months old to join the family meal at the dining table.",
@@ -93,6 +104,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Nestpark Portable Drink and Baby Formula Mixer",
             category: "Kitchen" ,
             description:"MAKES THE SMOOTHEST MIXED DRINKS OR WE'LL SEND YOUR MONEY BACK! -Want to finally get rid of all those clumps and lumps in your powder & formula mixes? You’ve found the solution; Our durable, fast and easy, tornado hand mixer is perfect",
@@ -101,6 +113,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Bee Esstentials Bib Set",
             category: "Kitchen" ,
             description:"Super soft and adorable, our 100% organic cotton bib sports our easy signature lap shoulder style so it slides off mess-free in the moments you need it most. All bibs have a knit terry backing.",
@@ -109,6 +122,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:5,
             name:"Charlie Banana 6 Diapers Plus 12 Inserts",
             category: "Necessities" ,
             description:"Charlie Banana 2-in-1 eco diapering system contains 6 diapers with organic cotton lining with 12 washable hemp inserts. one size: fitting babies from 0 to 30 months depending on the baby size. Hybrid option to use a washable insert or a disposable insert. Charlie banana diaper adjust to your baby ever changing feature with a safe snap system. great for everyday and overnight use. hemp inserts are highly absorbent making Charlie banana 2-in1 reusable diapering system a trusted choice by mothers all over the world.",
@@ -117,6 +131,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:5,
             name:"WaterWipes",
             category: "Necessities" ,
             description:"With such a gentle design, these wipes can be used for several cleaning purposes, including diapering, hand and mouth cleaning, quick body washes and breastfeeding hygiene, and they're safe enough to be used by anyone in the family. The hypoallergenic, soft wipes make a great cleaning solution for individuals with skin sensitivities.",
@@ -125,6 +140,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:5,
             name:"Diaper Bag Backpack for Baby Care",
             category: "Necessities" ,
             description:"DURABLE & WATERPROOF : This diaper bag is made with high quality fabric that is durable and waterproof ,which makes you easy to wipe clean. MUTIPLE COMPARTMENTS & LARGE CAPACITY: Separated storage pockets allow you to organize all your supplies and your baby’s supplies easily.And it’s roomy enough for holding essential items you want to carry for baby.",
@@ -133,14 +149,16 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Lullaby Earth 2-Stage Super Lightweight Mattress",
             category: "Nursery" ,
             description:"a lightweight design,waterproof outer with seamless edges firm support,no harmful chemicals or allergens fits in cribs and toddler beds.",
-            imgUrl: "https://images-na.ssl-images-amazon.com/images/I/61s3jmf54XL._SL1500_.jpg  ",
+            imgUrl: "https://images-na.ssl-images-amazon.com/images/I/61s3jmf54XL._SL1500_.jpg",
             buyUrl:"https://www.amazon.com/dp/B007I0K532?tag=blvisitor-20",
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Oeuf Fawn Crib and Bassinet System Conversion",
             category: "Nursery" ,
             description:"The Fawn conversion kit turns the Fawn crib into a day-bed style toddler bed.The Fawn crib and bassinet system starts as a bassinet on wheels and can be converted into a full sized crib. This modern, eco-friendly design is both practical and chic. This 2-in-1 crib/bassinet convert grows with your child and will get use for years to come.",
@@ -149,6 +167,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Oeuf Eco-Friendly Changing Pad",
             category: "Nursery" ,
             description:"This pad is made of renewable plant-based certified eco-foam (which substitutes plant oils for petroleum-based oils). An extra-sturdy support board, and a Damask cloth cover with waterproof backing make this pad sturdy and easy to clean",
@@ -157,6 +176,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Petit Collage Deluxe Bamboo Mobile",
             category: "Nursery" ,
             description:"A modern addition to any child's room, this Petit Collage mobile is laser cut from sustainably harvested bamboo plywood, an earth friendly renewable resource. This deluxe bamboo mobile also features 100 percent wool felt elephant ears that easily slot into place adding a pop of color to the room.",

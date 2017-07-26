@@ -6,26 +6,25 @@ import img03 from '../img/img03.JPG';
 import img04 from '../img/img04.JPG';
 import Rotation from 'react-rotation';
 const styles = {
-    height:610,
-    position: 'fixed',
-    top: 0,
-    zIndex: -1000,
-    backgroundColor: '#FFFEF4',
-    width: '100%'
-    };
+    display: 'flex',
+    justifyContent: "center"
+
+};
+
+const Content ={
+    padding: 250,
+    margin: 10,
+    backgroundColor: "",
+    color: "",
+    display: "inline-block",
+    fontFamily: "monospace",
+    fontSize: "50",
+    textAlign: "center",
+};
 const Home =() => {
         return(
-            <div className="Home" >
-                <Rotation>
-                    <img  src={lincoln} style={styles}/>
-                    <img  src={img01} style={styles}/>
-                    <img  src={img02} style={styles}/>
-                    <img  src={img03} style={styles}/>
-                    <img  src={img04} style={styles}/>
-
-
-
-                </Rotation>
+            <div className="Home" style={styles} >
+               <h1 style={Content}>The Well-Stocked Stork</h1>
             </div>
         )
     };

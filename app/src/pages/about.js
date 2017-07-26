@@ -18,6 +18,10 @@ const Content ={
         textAlign: "center",
 };
 
+const Abt ={
+    textAlign:"center"
+};
+
 const Content1={
     top: 0,
     zIndex: -1000,
@@ -30,7 +34,7 @@ const About = () => {
         return(
             <div className="about" style={styles}>
                 <div>
-                <h1>About:</h1>
+                <h1 style={Abt}>About:</h1>
                 <br/>
                 <p style={Content}>We’re parents, just like you. We recently had a baby and we quickly came to this realization:
                     The problem with baby stuff isn’t that you don’t know what to get.  You know exactly what you need, but there are so many choices. For everything. Hundreds of bottles. Just as many nipples. Bibs. Pacifiers. Countless car seats. Strollers that range in price from $50 to thousands. Diapers galore. Bouncers, swings, and chairs that’ll make your head spin. Toys of all types. Cribs. Bassinets. Co-sleepers. And that’s just the start! The options seem endless, so we’re here to help.
@@ -42,6 +46,7 @@ const About = () => {
                     Willis and Darcy
                 </p>
                 </div>
+
             </div>
         )
 };

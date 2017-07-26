@@ -4,6 +4,7 @@ module.exports = {
     up: function (queryInterface, Sequelize) {
 
         queryInterface.bulkInsert('Chicmoms', [{
+            callid:1,
             name:"Aquascale 3 in 1 Digital Scale",
             category: "Bathing & Grooming" ,
             description:"The Aqua Scale is a digital tub to monitor your child's health and well-being. It has a patented technology that adjusts for water and displays your child's weight.",
@@ -12,6 +13,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:1,
             name:"Fridababy Bitty Bundle of Joy",
             category: "Bathing & Grooming" ,
             description:"The Bitty Bundle of Joy from Fridababy is the perfect fuss-busting starter kit for new parents. Featuring NoseFrida, the pediatrician recommended booger buster, the Bitty Bundle of Joy also comes equipped with Windi, the all-natural gas passer, and NailFrida for those intimidating baby mani-pedis.",
@@ -20,6 +22,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:1,
             name:"Triple Paste Medicated Ointment for Diaper Rash",
             category: "Bathing & Grooming" ,
             description:"Triple Paste medicated ointment is the premium choice to help treat and prevent diaper rash. This ointment provides a fragrance free and hypoallergenic option for treating babies with raw and irritated skin. Every baby deserves the best diaper ointment. Triple Paste is everything you need to comfort your baby's diaper rash.",
@@ -28,7 +31,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
-            name:"3-in-1 Baby Shampoo",
+            callid:1,            name:"3-in-1 Baby Shampoo",
             category: "Bathing & Grooming" ,
             description:"KEEP YOUR BABY HAPPY, HEALTHY & SAFE: No Harsh Chemicals. No Parabens, No Phosphates, No Sulfates. NO MORE CRYING WITH TEAR FREE Baby Wash - Try the tear test by washing your face with the baby shampoo and body wash",
             imgUrl: "https://images-na.ssl-images-amazon.com/images/I/71CkEFGU8fL._SY355_.jpg",
@@ -36,7 +39,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
-            name:"Skip Hop Silver Lining Cloud Activity Gym",
+            callid:2,            name:"Skip Hop Silver Lining Cloud Activity Gym",
             category: "For Fun" ,
             description:"Enjoy plush playtime on our big, cozy cloud! Every cloud has a silver lining and this dreamy baby activity gym is no exception! Offering hours of plush playtime, it features a soft color palette to complement modern decor along with pops of neon to stimulate baby's sight.",
             imgUrl: "http://www.toysrus.com/graphics/product_images/pTRU1-24714263dt.jpg",
@@ -44,6 +47,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"BABYBJORN Cotton Bouncer Bliss",
             category: "Handy Helper" ,
             description:"The light gray base and frame creates a soft impression, and the monotone fabric seat provides a luxurious feel that will be an attractive detail in your home. Bouncer Bliss is available in a plush cotton quilting and soft, child-friendly mesh - two extra cozy fabrics for a soft start to life. Bouncer Bliss gives your baby a cozy place to rest and play. The ergonomically shaped seat provides proper support to your baby's back, neck and head.",
@@ -52,6 +56,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"Eco Swaddling Blanket in Winter White",
             category: "Handy Helper" ,
             description:"This Eco Swaddling Blanket is made with oxygen bleached 100% Organic Cotton Fleece that is so soft and cozy!.Perfectly pure just like a newborn babe! A perfect blanket for the cooler seasons!",
@@ -60,6 +65,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"Dyson Humidifer",
             category: "Handy Helper" ,
             description:"The Dyson Humidifier in White/Silver exposes every drop of water to an ultraviolet light through patented Ultraviolet Cleanse technology. The cooling humidifier can keep you cool in summer while hydrating the winter air.",
@@ -68,6 +74,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"Wave Baby Premium Soothing Sound Machine",
             category: "Handy Helper" ,
             description:"Add a sense of calm to your baby’s nursery with this stylish sound machine that helps drown out household noises and promotes more restful sleep. Each of the 6 sound settings were carefully selected with your baby in mind to help you create the ideal mood for naptime or bedtime.",
@@ -76,6 +83,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:3,
             name:"Infant Optics DXR-8 Video Baby Monitor",
             category: "Handy Helper" ,
             description:"The Infant Optics DXR-8 Video Monitor is the first baby monitor with interchangeable lens technology. Three separate lens types normal, wide angle and zoom allow you to choose the most suitable focal length and viewing angle for the specific environment.",
@@ -84,6 +92,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Philips Avent Natural Newborn Baby Bottle",
             category: "Kitchen" ,
             description:"Philips Avent SCD296/02 BPA Free Natural Infant Starter Set is the most natural way to start bottle feeding. The 5 BPA-free Natural bottles included in this kit feature wide breast-shaped nipples with unique comfort petals promoting natural latch on and making it easy to combine breast and bottle feeding.  ",
@@ -92,6 +101,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Medela Breastmilk Bottle Set",
             category: "Kitchen" ,
             description:"Medela polypropylene breast milk bottles are made without BPA, designed to retain breast milk's beneficial properties. Compatible with all Medela breast pumps, so you can pump, store and feed with one container. Great for long term storage. Dishwasher safe. Measure the exact amount of milk you're pumping with the ounce and millimeter markers. Screw on lids for leak proof storage, travel and freezing.",
@@ -100,6 +110,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Eternal Circle Child's Fork and Spoon Set",
             category: "Kitchen" ,
             description:"There is no shape more complete, more eternal, than a circle. Fork and spoon in sterling silver. 4.5 long each.",
@@ -108,6 +119,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Nuna Zaaz Highchair",
             category: "Kitchen" ,
             description:"This versatile high chair features durable designer details in addition to innovative construction. Expertly built from the ground up, this revolutionary chair from Nuna is a must-have for your baby’s mealtime. Customizable, supportive and exceedingly tested for safety, the ZAAZ™ will grow with your baby without compromising your pre-baby lifestyle. Plus, the gliding lift mechanism and removable tray and arm bar make clean-up a snap!",
@@ -116,6 +128,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Sugar Chic Baby Bibs",
             category: "Kitchen" ,
             description:"Our modern Sugar Chic Baby Bibs are made of high quality designer fabrics on all bib fronts & an absorbent DOUBLE layer of soft organic flannel on the back to keep your drooly baby extra dry & comfortable. ",
@@ -124,6 +137,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:4,
             name:"Baby Brezza Formula Pro One Step Food Maker",
             category: "Kitchen" ,
             description:" Introducing Formula Pro, the revolutionary new way of preparing your baby’s formula bottles. The Formula Pro uses worldwide patent-pending technology to measure and mix water and powdered formula to the perfect temperature (about 98 degrees) and consistency. With the push of a button, you can prepare a bottle within seconds that has no air bubbles. ",
@@ -132,6 +146,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:5,
             name:"Pampers Swaddlers",
             category: "Necessities" ,
             description:"Wrap your baby in Pampers Swaddlers diapers, our most trusted comfort and protection and the #1 Choice of US Hospitals.* Our Blankie Soft diaper with a unique Absorb Away Liner pulls wetness and mess away from baby's skin to help keep your baby comfortable. It also has a color-changing wetness indicator that tells you when your baby might need a change.",
@@ -140,6 +155,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:5,
             name:"WaterWipes",
             category: "Necessities" ,
             description:"With such a gentle design, these wipes can be used for several cleaning purposes, including diapering, hand and mouth cleaning, quick body washes and breastfeeding hygiene, and they're safe enough to be used by anyone in the family. The hypoallergenic, soft wipes make a great cleaning solution for individuals with skin sensitivities.",
@@ -148,6 +164,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:5,
             name:"watson lane betheny baby bag",
             category: "Necessities" ,
             description:"his season, at kate spade new york, everything's coming up roses, and that includes the watson lane betheny, a chic printed nylon baby bag that boasts loads of mom-friendly details",
@@ -156,6 +173,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Arms Reach Concepts Inc. Co-Sleeper Sleigh Bed",
             category: "Nursery" ,
             description:"The Arms Reach Sleigh Bedside Co-Sleeper Bassinet is made of beautiful solid beech wood designed to create a classic Sleigh Bed look. It attaches securely to your adult bed and fits all sizes from twin to California King, from 18 to 30 bed heights in two inch increments. The Sleigh Bedside Co-Sleeper Bassinet offers a cozy environment and ease of nighttime nursing while mother rests comfortably in her own bed.",
@@ -164,6 +182,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Cristallo 2 Piece Nursery Set with Leather Panel",
             category: "Nursery" ,
             description:"Like the playful nature of light that bounces off a crystal and makes rainbows on the wall, the architectural shapes paired with the upholstered cushion of the Cristallo Forever Crib provide a playful combination of refined styling and chic design. The Cristallo Forever Crib is an enchanting blend of classic lines paired with sweet touches of sophisticated luxury.",
@@ -172,6 +191,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Fillmore Extra Wide Dresser & Topper Set",
             category: "Nursery" ,
             description:"Ample storage is a gift you will treasure more with each passing year, as your baby – and your baby's wardrobe – grows. With four small and four large drawers, this substantial dresser will meet your child’s needs through the teen years.",
@@ -180,6 +200,7 @@ module.exports = {
             created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
             updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
         },{
+            callid:6,
             name:"Handmade Elephant & Bubble Baby Mobile",
             category: "Nursery" ,
             description:"This adorable elephant and bubble baby mobile will be the piece that really ties the nursery together! Natural wood and hand-knit organic cotton create the ideal combination for an eco-conscious mum and dad.",

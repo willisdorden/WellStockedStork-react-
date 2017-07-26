@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link,} from 'react-router-dom';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Sidebar from './sidemenu/sidemenu';
@@ -9,12 +8,23 @@ import MaterialTitlePanel from './sidemenu/sidemenu material';
 import Loginscreen  from './pages/Loginscreen';
 import Register from './pages/Registerscreen';
 import Home from './pages/home';
-import Slider from './pages/slideshow/Slider';
+import About from './pages/about';
 import Dashboard from './pages/dashboard';
 import Questions from './pages/questions';
-import Ecomom from './pages/Ecomom';
-
-import About from './pages/about';
+import Ecomom from './pages/ecomom/Ecomom';
+import Bathingandgrooming from './pages/ecomom/bathingandgrooming';
+import Forfun from './pages/ecomom/forfun';
+import HandyHelper from './pages/ecomom/handyhelper';
+import Kitchen from './pages/ecomom/kitchen';
+import Necessities from './pages/ecomom/necessities';
+import Nursery from './pages/ecomom/nursery';
+import Chicmom from './pages/chicmom/Chicmom';
+import Chicbathingandgrooming from './pages/chicmom/chicbathingandgrooming';
+import Chicforfun from './pages/chicmom/chicforfun';
+import ChichandyHelper from './pages/chicmom/chichandyhelper';
+import Chickitchen from './pages/chicmom/chickitchen';
+import Chicnecessities from './pages/chicmom/chicnecessities';
+import Chicnursery from './pages/chicmom/chicnursery';
 
 
 import './App.css';
@@ -27,7 +37,7 @@ const styles = {
     },
     content: {
         padding: '16px',
-        backgroundColor: "grey",
+        backgroundColor: "white",
         height:1600
     },
     title:{
@@ -113,6 +123,23 @@ class App extends Component {
                       <Route   path ="/dashboard" component={() => <Dashboard user={this.state.user} />} />
                       <Route   path="/questions"  component={() => <Questions user={this.state.user} />} />
                       <Route   path="/ecomom" component={Ecomom} />
+                      <Route   path="/ecomom/bathingandgrooming" component={() => <Bathingandgrooming user={this.state.user} />} />
+                      <Route   path="/ecomom/forfun" component= {() => <Forfun user={this.state.user} />} />
+                      <Route   path="/ecomom/handyhelper" component={() => <HandyHelper user={this.state.user} />} />
+                      <Route   path="/ecomom/kitchen" component={() => <Kitchen user={this.state.user} />} />
+                      <Route   path="/ecomom/necessities" component={() => <Necessities user={this.state.user} />} />
+                      <Route   path="/ecomom/nursery" component={() => <Nursery user={this.state.user} />} />
+                      {/*<Route   path="/ecomom/onthemove" component={Ecomom} />*/}
+                      <Route   path="/chicmom" component={Chicmom} />
+                      <Route   path="/chicmom/bathingandgrooming" component={() => <Chicbathingandgrooming user={this.state.user} />} />
+                      <Route   path="/chicmom/forfun" component= {() => <Chicforfun user={this.state.user} />} />
+                      <Route   path="/chicmom/handyhelper" component={() => <ChichandyHelper user={this.state.user} />} />
+                      <Route   path="/chicmom/kitchen" component={() => <Chickitchen user={this.state.user} />} />
+                      <Route   path="/chicmom/necessities" component={() => <Chicnecessities user={this.state.user} />} />
+                      <Route   path="/chicmom/nursery" component={() => <Chicnursery user={this.state.user} />} />
+                      {/*<Route   path="/chicmom/onthemove" component={chicmom} />*/}
+
+
                   </div>
               </MaterialTitlePanel>
           </Sidebar>

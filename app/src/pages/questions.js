@@ -107,7 +107,7 @@ class Questions extends Component {
 
                     {this.state.questions.map((quest) => (
                         <p> {quest.id}. {quest.question}
-                            <RadioGroup
+                            <RadioGroup style={answ}
                                 name="answeers"
                                 selectedValue={this.state.selectedValue}
                                 onChange={this.handleChange}>

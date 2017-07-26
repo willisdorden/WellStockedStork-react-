@@ -87,6 +87,164 @@ exports.Questions = (req,res) => {
         })
     })
 };
+
+exports.grooming =(req,res) => {
+    db.Ecomoms.findAll({
+        where:{
+            callid: 1,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.forfun =(req,res) => {
+    db.Ecomoms.findAll({
+        where:{
+            callid: 2,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.handyhelper =(req,res) => {
+    db.Ecomoms.findAll({
+        where:{
+            callid: 3,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.kitchen =(req,res) => {
+    db.Ecomoms.findAll({
+        where:{
+            callid: 4,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.necessities =(req,res) => {
+    db.Ecomoms.findAll({
+        where:{
+            callid: 5,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.nursery =(req,res) => {
+    db.Ecomoms.findAll({
+        where:{
+            callid: 6,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.chicgrooming =(req,res) => {
+    db.Chicmoms.findAll({
+        where:{
+            callid: 1,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.chicforfun =(req,res) => {
+    db.Chicmoms.findAll({
+        where:{
+            callid: 2,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.chichandyhelper =(req,res) => {
+    db.Chicmoms.findAll({
+        where:{
+            callid: 3,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.chickitchen =(req,res) => {
+    db.Chicmoms.findAll({
+        where:{
+            callid: 4,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.chicnecessities =(req,res) => {
+    db.Chicmoms.findAll({
+        where:{
+            callid: 5,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+exports.chicnursery =(req,res) => {
+    db.Chicmoms.findAll({
+        where:{
+            callid: 6,
+        }
+    }).then(function (Ecomoms) {
+        res.status(200).json({
+            success:true,
+            Ecomoms,
+        })
+    })
+};
+
+
 function generateHash(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 }

@@ -2,6 +2,14 @@
 module.exports = {
     up: function (queryInterface, Sequelize) {
         return queryInterface.createTable('Practicalmoms', {
+            id: {
+                type: Sequelize.INTEGER,
+                autoIncrement: true,
+                primaryKey: true
+            },
+            callId:{
+                type: Sequelize.INTEGER,
+            },
             name: {
                 type: Sequelize.TEXT,
                 allowNull: false

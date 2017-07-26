@@ -2,6 +2,9 @@
 
 module.exports = function(sequelize, DataTypes) {
     const Practicalmoms = sequelize.define("Practicalmoms", {
+        callId:{
+            type: DataTypes.BOOLEAN
+        },
         name: {
             type: DataTypes.TEXT
         },
