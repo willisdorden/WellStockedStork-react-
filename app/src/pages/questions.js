@@ -106,19 +106,19 @@ class Questions extends Component {
                     <br />
 
                     {this.state.questions.map((quest) => (
-                        <p> {quest.id}. {quest.question}
+                        <p key={quest.id}> {quest.id}. {quest.question}
                             <RadioGroup style={answ}
-                                name="answeers"
+                                name="answers"
                                 selectedValue={this.state.selectedValue}
                                 onChange={this.handleChange}>
                                 <li>
-                                    <Radio value="1" />{quest.surveyAnswers[0].body}
+                                    <Radio  key ={quest.surveyAnswers[0].SurveyQuestionId} value="1" />{quest.surveyAnswers[0].body}
                                 </li>
                                 <li>
-                                    <Radio value="2" />{quest.surveyAnswers[1].body}
+                                    <Radio key={quest.surveyAnswers[1].SurveyQuestionId} value="2" />{quest.surveyAnswers[1].body}
                                 </li>
                                 <li>
-                                    <Radio value="3" />{quest.surveyAnswers[2].body}
+                                    <Radio key ={quest.surveyAnswers[2].SurveyQuestionId} value="3" />{quest.surveyAnswers[2].body}
                                 </li>
                             </RadioGroup>
 
