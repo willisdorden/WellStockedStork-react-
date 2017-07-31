@@ -5,16 +5,22 @@ import img02 from '../img/img02.JPG';
 import img03 from '../img/img03.JPG';
 import img04 from '../img/img04.JPG';
 import Rotation from 'react-rotation';
+import logo from '../img/logo.jpg';
 const styles = {
     display: 'flex',
     justifyContent: "center"
 
 };
 
+const Img={
+    width: "100%",
+    height: "100%",
+};
+
 const Content ={
     padding: 250,
     margin: 10,
-    backgroundColor: "",
+    backgroundImg: "",
     color: "",
     display: "inline-block",
     fontFamily: "monospace",
@@ -24,7 +30,7 @@ const Content ={
 const Home =() => {
         return(
             <div className="Home" style={styles} >
-               <h1 style={Content}>The Well-Stocked Stork</h1>
+               <img style={Img} src={logo}/>
             </div>
         )
     };

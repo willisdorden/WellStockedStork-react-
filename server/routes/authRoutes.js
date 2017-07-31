@@ -46,4 +46,6 @@ module.exports = app => {
 
     app.post('/practical/nursery', authController.practicalnursery);
 
+    app.post('/answers', authController.answers);
+
 };

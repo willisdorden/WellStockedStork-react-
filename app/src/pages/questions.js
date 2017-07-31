@@ -46,15 +46,20 @@ class Questions extends Component {
             user: "",
             questions: [],
             answers: [],
-            selectedValue:"1"
-        };
+            surveyAnswers: {}
+
+    };
+
         this.handleChange = this.handleChange.bind(this);
 
     }
 
-
-    handleChange(value) {
-        this.setState({selectedValue: value});
+    handleChange(event, value) {
+        const answers=this.state.surveyAnswers;
+        answers[event.target.name] = event.target.value;
+        this.setState({
+           surveyAnswers:answers
+        })
     }
 
 
@@ -81,10 +86,15 @@ class Questions extends Component {
             });
     }
     handleClick(event){
-        const payload={
-            "answers": this.state.answers
-        };
-        console.log(payload)
+        const payload=
+            this.state.surveyAnswers
+
+      axios.post('/answers', payload)
+          .then((response) =>{
+          if(response.status === 200){
+              console.log('successfull');
+          }
+        })
     }
 
     render(){
@@ -104,36 +114,34 @@ class Questions extends Component {
 
                     <h1>Welcome to The Well-Stocked Stork!</h1>
                     <br />
+                    {
+                        this.state.questions.map(quest => {
+                            return (
+                                <div>
+                                    <p key={quest.id}> {quest.id}. {quest.question} </p>
+                                    <ul>
+                                    <li style={answ}> <input type="radio" name={`questionId${quest.id}`} key={quest.id}
+                                                value={quest.surveyAnswers[0].value}
+                                                onChange = {this.handleChange}  />
+                                                {quest.surveyAnswers[0].body}
+                                        </li>
+                                    <li style={answ}> <input type="radio" name={`questionId${quest.id}`} key={quest.id}
+                                                value={quest.surveyAnswers[1].value}
+                                                onChange = {this.handleChange} />
+                                                {quest.surveyAnswers[1].body}
+                                                </li>
+                                    <li style={answ}> <input type="radio" name={`questionId${quest.id}`} key={quest.id}
+                                                value={quest.surveyAnswers[2].value}
+                                                onChange = {this.handleChange}  />
+                                                {quest.surveyAnswers[2].body}
+                                                </li>
 
-                    {this.state.questions.map((quest) => (
-                        <p key={quest.id}> {quest.id}. {quest.question}
-                            <RadioGroup style={answ}
-                                name="answers"
-                                selectedValue={this.state.selectedValue}
-                                onChange={this.handleChange}>
-                                <li>
-                                    <Radio  key ={quest.surveyAnswers[0].SurveyQuestionId} value="1" />{quest.surveyAnswers[0].body}
-                                </li>
-                                <li>
-                                    <Radio key={quest.surveyAnswers[1].SurveyQuestionId} value="2" />{quest.surveyAnswers[1].body}
-                                </li>
-                                <li>
-                                    <Radio key ={quest.surveyAnswers[2].SurveyQuestionId} value="3" />{quest.surveyAnswers[2].body}
-                                </li>
-                            </RadioGroup>
+                                </ul>
+                                </div>
+                            );
+                        })
+                    }
 
-                            {/*<li> <input type="radio" name={quest.surveyAnswers[0].body} value="1"  onChange = {(event,value) => this.setState({answers: quest.surveyAnswers[0].value})}  />{quest.surveyAnswers[0].body}</li>*/}
-                            {/*<li> <input type="radio" name={quest.surveyAnswers[1].body} value="2"  onChange = {(event,value) => this.setState({answers: quest.surveyAnswers[1].value})} />{quest.surveyAnswers[1].body}</li>*/}
-                            {/*<li> <input type="radio" name={quest.surveyAnswers[2].body} value="3"  onChange = {(event,value) => this.setState({answers: quest.surveyAnswers[2].value})}  />{quest.surveyAnswers[2].body}</li>*/}
-
-                        {/*</ul>*/}
-                            {/*<RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/><RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>*/}
-
-                        </p>
-
-
-
-                    ))}
                     <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
 
                 </div>

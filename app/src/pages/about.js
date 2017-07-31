@@ -1,11 +1,16 @@
 import React from 'react';
-
+import StorkLogoC from '../img/StorkLogoC.jpg'
 const styles = {
     display: 'flex',
     justifyContent: "center"
 
 };
 
+const Img ={
+
+    height:200,
+    width:200
+};
 
 const Content ={
         padding: 10,
@@ -20,6 +25,7 @@ const Content ={
 
 const Abt ={
     textAlign:"center"
+
 };
 
 const Content1={
@@ -33,6 +39,9 @@ const Content1={
 const About = () => {
         return(
             <div className="about" style={styles}>
+                <div>
+                    <img style={Img} src={StorkLogoC}/>
+                </div>
                 <div>
                 <h1 style={Abt}>About:</h1>
                 <br/>

@@ -43,9 +43,9 @@ const styles = {
         padding: 8,
     },
     content: {
-        padding: '16px',
+        // padding: '16px',
         backgroundColor: "white",
-        height:1600
+        height:"100%"
     },
     title:{
         textAlign: 'center'

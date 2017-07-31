@@ -13,18 +13,18 @@ const styles = {
     sidebarLink: {
         display: 'block',
         padding: '16px 0px',
-        color: '#757575',
+        color: 'white',
         textDecoration: 'none',
     },
     divider: {
         margin: '8px 0',
         height: 1,
-        backgroundColor: '#757575',
+        backgroundColor: '#d5e1bd',
     },
     content: {
         padding: '16px',
         height: '100%',
-        backgroundColor: 'white',
+        backgroundColor: '#a4ccd0',
     },
         sidebarUl: {
         listStyle: 'none'

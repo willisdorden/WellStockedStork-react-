@@ -321,8 +321,17 @@ exports.practicalnursery =(req,res) => {
         })
     })
 };
-
-
+exports.answers = (req, res) => {
+    console.log(req.body);
+    db.submittedAnswers.create({
+        userAnswer: req.body
+    }).then(function(answers){
+        res.status(200).json({
+            success:true,
+            answers
+        })
+    })
+};
 function generateHash(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 }
