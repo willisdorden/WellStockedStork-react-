@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-app.use("/", express.static(path.resolve(__dirname, '../app/build')));
+app.use("/", express.static(path.join(__dirname, '../app/build')));
 
 //login and register routes
 require('./routes/authRoutes')(app);
