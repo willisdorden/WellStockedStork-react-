@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af228397-e4e8-41c7-a8ad-0ffb133c5da3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/StorkLogoC.47719391.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/img01.a588bb39.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/img02.a67d743b.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/img03.ebf06e3f.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/img04.0916f0da.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/lincoln.96c907ac.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/media/logo.654fa47e.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/asset-manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/service-worker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/css/main.973309fc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/css/main.973309fc.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/js/main.b09b09f0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/static/js/main.b09b09f0.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/build/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/index.js" afterPath="$PROJECT_DIR$/server/index.js" />
     </list>
@@ -110,55 +127,15 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/db/models/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/db/config/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="239">
+              <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/app/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -364,24 +341,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stork" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stork" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -403,11 +362,11 @@
       <recent name="$PROJECT_DIR$/src/pages/slideshow/imgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/app/src/img" />
       <recent name="$PROJECT_DIR$/app/src/pages" />
       <recent name="$PROJECT_DIR$/app/src/Well-Stocked Stork Assets " />
       <recent name="$PROJECT_DIR$/app/src/pages/ecomom" />
-      <recent name="$PROJECT_DIR$/server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -926,12 +885,12 @@
       <workItem from="1500148259518" duration="1782000" />
       <workItem from="1500218966889" duration="47135000" />
       <workItem from="1500667029515" duration="20075000" />
-      <workItem from="1501434241786" duration="14773000" />
+      <workItem from="1501434241786" duration="15188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203510000" />
+    <option name="totallyTimeSpent" value="203925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1018,13 +977,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/pages/chicmom/chicnursery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/33d8b60/54b27822-a7f0-40b2-bec1-be2cb60877d9/wellstockedstork.Chicmoms">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1373,7 +1325,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/index.html">
+    <entry file="file://$PROJECT_DIR$/server/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1397,10 +1349,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="239">
+          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           <folding />
         </state>
       </provider>
