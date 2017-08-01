@@ -10,7 +10,7 @@ const styles = {
     // justifyContent: "center",
     backgroundImage:`url(${StorkLogoC})`,
     width: "100%",
-    height: "700",
+    height: "800",
 
 };
 
