@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af228397-e4e8-41c7-a8ad-0ffb133c5da3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/asset-manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/service-worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/css/main.973309fc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/css/main.973309fc.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/js/main.f163f515.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/js/main.f163f515.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/StorkLogoC.47719391.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/img01.a588bb39.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/img02.a67d743b.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/img03.ebf06e3f.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/img04.0916f0da.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/lincoln.96c907ac.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/static/media/logo.654fa47e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/build/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/about.js" afterPath="$PROJECT_DIR$/app/src/pages/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/dashboard.js" afterPath="$PROJECT_DIR$/app/src/pages/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/ecomom/Ecomom.js" afterPath="$PROJECT_DIR$/app/src/pages/ecomom/Ecomom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/ecomom/bathingandgrooming.js" afterPath="$PROJECT_DIR$/app/src/pages/ecomom/bathingandgrooming.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -420,15 +398,15 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/slideshow/imgs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/app/src/img" />
       <recent name="$PROJECT_DIR$/app/src/pages" />
       <recent name="$PROJECT_DIR$/app/src/Well-Stocked Stork Assets " />
       <recent name="$PROJECT_DIR$/app/src/pages/ecomom" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/slideshow/imgs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -955,12 +933,12 @@
       <workItem from="1501792792290" duration="1602000" />
       <workItem from="1501797424174" duration="6717000" />
       <workItem from="1501952600108" duration="543000" />
-      <workItem from="1501953158026" duration="60000" />
+      <workItem from="1501953158026" duration="232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222691000" />
+    <option name="totallyTimeSpent" value="222863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
