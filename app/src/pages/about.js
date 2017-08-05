@@ -1,7 +1,7 @@
 import React from 'react';
 import StorkLogoC from '../img/StorkLogoC.jpg';
 import { Grid, Row, Col } from 'react-bootstrap';
-import logo from '../img/logo.jpg';
+import family from '../img/family.JPG';
 
 
 
@@ -16,13 +16,13 @@ const styles = {
 
 const Img1 ={
     padding:"28",
-    width: "100%",
+    width: "75%",
     height: "100%",
 };
 
 const Img ={
 
-    height:200,
+    height:150,
     width:200
 };
 
@@ -73,7 +73,7 @@ const About = () => {
                     </Col>
                     <Col  lg={6} >
 
-                        <img style={Img1} src={logo}/>
+                        <img style={Img1} src={family}/>
                     </Col>
 
                 </Grid>

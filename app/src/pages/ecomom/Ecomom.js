@@ -18,7 +18,7 @@ const Links={
     listStyle: 'none',
     display: "inline-block",
     fontFamily: "monospace",
-    fontSize: "20",
+    fontSize: "14",
     alignItems: 'center',
 
 
@@ -31,7 +31,7 @@ const Content ={
     color: "",
     display: "inline-block",
     fontFamily: "monospace",
-    fontSize: "20",
+    fontSize: "14",
     textAlign: "center",
 };
 

@@ -44,7 +44,7 @@ const Content ={
     color: "",
     display: "inline-block",
     fontFamily: "monospace",
-    fontSize: "20",
+    fontSize: "14",
     textAlign: "center",
 };
 
