@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af228397-e4e8-41c7-a8ad-0ffb133c5da3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/App.js" afterPath="$PROJECT_DIR$/app/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/Loginscreen.js" afterPath="$PROJECT_DIR$/app/src/pages/Loginscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/Register.js" afterPath="$PROJECT_DIR$/app/src/pages/Register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/Registerscreen.js" afterPath="$PROJECT_DIR$/app/src/pages/Registerscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/about.js" afterPath="$PROJECT_DIR$/app/src/pages/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/chicmom/Chicmom.js" afterPath="$PROJECT_DIR$/app/src/pages/chicmom/Chicmom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/chicmom/chicbathingandgrooming.js" afterPath="$PROJECT_DIR$/app/src/pages/chicmom/chicbathingandgrooming.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/ecomom/Ecomom.js" afterPath="$PROJECT_DIR$/app/src/pages/ecomom/Ecomom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/practicalmom/Practicalmom.js" afterPath="$PROJECT_DIR$/app/src/pages/practicalmom/Practicalmom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalforfun.js" afterPath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalforfun.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalhandyhelper.js" afterPath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalhandyhelper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalkitchen.js" afterPath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalkitchen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalnecessities.js" afterPath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalnecessities.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalnursery.js" afterPath="$PROJECT_DIR$/app/src/pages/practicalmom/practicalnursery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/sidemenu/sidemenuContent.js" afterPath="$PROJECT_DIR$/app/src/sidemenu/sidemenuContent.js" />
-    </list>
+    <list default="true" id="af228397-e4e8-41c7-a8ad-0ffb133c5da3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1100,12 +1084,12 @@
       <workItem from="1501952600108" duration="543000" />
       <workItem from="1501953158026" duration="1989000" />
       <workItem from="1501962024364" duration="5053000" />
-      <workItem from="1502545306004" duration="7209000" />
+      <workItem from="1502545306004" duration="7278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236882000" />
+    <option name="totallyTimeSpent" value="236951000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1118,7 +1102,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1115,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5674699" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5665295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22603719" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
