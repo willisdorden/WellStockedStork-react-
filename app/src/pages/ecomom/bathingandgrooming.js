@@ -13,21 +13,12 @@ import {Grid, Row, Col} from 'react-bootstrap';
 
 const styles = {
     textAlign:"center"
-
-
-
 };
-
 const Mom ={
     textAlign:"center",
     display: "inline",
     fontFamily: "book",
-
-
 };
-
-
-
 const img ={
     height:200,
     width:200

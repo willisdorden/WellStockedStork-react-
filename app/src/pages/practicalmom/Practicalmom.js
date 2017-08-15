@@ -1,26 +1,28 @@
-
 import React  from 'react';
 import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
-
+import {Grid, Row, Col} from 'react-bootstrap';
 
 const styles = {
     display: 'flex',
-    justifyContent: "center"
+    justifyContent: "center",
+    padding: 60
 
 };
 
 const Mom ={
     textAlign:"center",
     display: "inline",
+    fontFamily: "book",
 
 };
 
 const Links={
+    padding: 60,
     listStyle: 'none',
-    display: "inline-block",
-    fontFamily: "monospace",
-    fontSize: "20",
-    alignItems: 'center',
+    display: "inline",
+    fontFamily: "book",
+    fontSize: "15.5",
+    textAlign: "center",
 
 
 };
@@ -31,8 +33,8 @@ const Content ={
     backgroundColor: "",
     color: "",
     display: "inline-block",
-    fontFamily: "monospace",
-    fontSize: "20",
+    fontFamily: "book",
+    fontSize: "15.5",
     textAlign: "center",
 };
 
@@ -41,7 +43,9 @@ const Content ={
 const Practicalmom =() => {
     return(
         <div className="practicalmom" style={styles}>
-            <div style={Mom}>
+            <Grid>
+                <Row>
+                    <Col md={12} style={Mom}>
                 <h1 style={Mom}>Pretty Practical Mom</h1>
                 <br/>
 
@@ -50,7 +54,10 @@ const Practicalmom =() => {
                     Basic necessities are a given, and a few special indulgences are nice every now and then.
                     You understand that “things” are nice, but love and attention are the most important gifts you can give your child.
                     Check out the list we’ve put together just for you – we think you’ll agree that these items will make your life with baby practically perfect!</p>
-
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={12}>
                 <ul style={Links}>
                     <li><Link to="/practicalmom/bathingandgrooming">Bathing & Grooming</Link></li>
                     <li><Link to="/practicalmom/forfun">For Fun</Link></li>
@@ -60,7 +67,9 @@ const Practicalmom =() => {
                     <li><Link to="/practicalmom/nursery">Nursery</Link></li>
                     <li><Link to="/practicalmom/onthemove">On the Move</Link></li>
                 </ul>
-            </div>
+                    </Col>
+                </Row>
+            </Grid>
         </div>
     )
 };
