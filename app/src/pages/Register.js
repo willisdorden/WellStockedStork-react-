@@ -7,7 +7,9 @@ import Login from './Login';
 import axios from 'axios';
 const styles ={
     Register: {
-        padding: 150
+        padding: 150,
+        fontFamily: "book",
+        fontSize: " 15.5",
 
     }
 };

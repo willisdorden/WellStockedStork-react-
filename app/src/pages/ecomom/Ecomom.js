@@ -1,7 +1,7 @@
 import React  from 'react';
 import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
 import {Grid, Row, Col} from 'react-bootstrap';
-
+import EcoEarthMom from './img/EcoEarthMom.png';
 const styles = {
     display: 'flex',
     justifyContent: "center",
@@ -21,7 +21,7 @@ const Links={
     listStyle: 'none',
     display: "inline",
     fontFamily: "book",
-    fontSize: "15.5",
+    fontSize: "18",
     textAlign: "center",
 
 
@@ -38,6 +38,14 @@ const Content ={
     textAlign: "center",
 };
 
+const Img1 ={
+    height:250,
+    width:250,
+    marginRight:400
+};
+const col ={
+    marginLeft: 300
+};
 
 
 const Ecomom =() => {
@@ -57,8 +65,11 @@ const Ecomom =() => {
             </Col>
                 </Row>
                 <Row>
-                    <Col md={12}>
+                    <Col md={3} style={col}>
+                        <img style={Img1} src={EcoEarthMom}/>
+                    </Col>
 
+                    <Col md={2}>
                 <ul style={Links}>
                     <li><Link to="/ecomom/bathingandgrooming">Bathing & Grooming</Link></li>
                     <li><Link to="/ecomom/forfun">For Fun</Link></li>

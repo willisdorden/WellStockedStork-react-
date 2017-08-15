@@ -38,8 +38,8 @@ const Content ={
         backgroundColor: "",
         color: "",
         display: "inline-block",
-        fontFamily: "monospace",
-        fontSize: "14",
+        fontFamily: "book",
+        fontSize: "15.5",
         textAlign: "center",
 };
 

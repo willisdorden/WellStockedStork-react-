@@ -41,6 +41,8 @@ const styles = {
         textDecoration: 'none',
         color: 'white',
         padding: 8,
+        fontFamily: "book",
+        fontSize: " 20.5",
     },
     content: {
         // padding: '16px',
@@ -48,7 +50,9 @@ const styles = {
         height:"100%"
     },
     title:{
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: "book",
+        fontSize: " 20.5",
     }
 };
 

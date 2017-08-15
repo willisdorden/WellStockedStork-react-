@@ -28,7 +28,7 @@ const Mom ={
 
 const img ={
     height:200,
-    width:200
+    width:200,
 };
 
 const Content ={

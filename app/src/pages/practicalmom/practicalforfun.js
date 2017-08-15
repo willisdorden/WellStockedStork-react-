@@ -1,32 +1,24 @@
 
-
-
 import React, { Component } from 'react';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Redirect,
+    withRouter
+} from 'react-router-dom';
 import axios from 'axios';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 
 const styles = {
-    display: 'flex',
-    justifyContent: "center"
-
+    textAlign:"center"
 };
-
 const Mom ={
     textAlign:"center",
     display: "inline",
-
+    fontFamily: "book",
 };
-
-const Links={
-    listStyle: 'none',
-    display: "inline-block",
-    fontFamily: "monospace",
-    fontSize: "20",
-    alignItems: 'center',
-
-
-};
-
 const img ={
     height:200,
     width:200
@@ -38,8 +30,8 @@ const Content ={
     backgroundColor: "",
     color: "",
     display: "inline-block",
-    fontFamily: "monospace",
-    fontSize: "20",
+    fontFamily: "book",
+    fontSize: " 15.5",
     textAlign: "center",
 };
 
@@ -77,17 +69,19 @@ class Practicalforfun extends Component {
 
 
             <div style={styles}>
-                <div>
+                <Grid>
+                    <Row>
+                        <Col md={12}>
                     <h1 style={Mom}>For Fun</h1>
                     <br/>
                     {this.state.products.map((quest) => (
-                        <p style={Content} key={quest.id}> name: {quest.name}
+                        <p style={Content} key={quest.id}>{quest.name}
                             <br/>
                             <br/>
                             <img style={img} src={quest.ImgUrl} />.
                             <br/>
                             <br/>
-                            Description:<br/>
+                            <br/>
                             {quest.description}
                             <br/>
                             <br/>
@@ -95,7 +89,9 @@ class Practicalforfun extends Component {
 
                         </p>
                     ))}
-                </div>
+                        </Col>
+                    </Row>
+                </Grid>
             </div>
 
 

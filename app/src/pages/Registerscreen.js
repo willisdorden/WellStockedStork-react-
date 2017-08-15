@@ -7,7 +7,9 @@ import Login from './Login';
 import axios from 'axios';
 const styles = {
     display: 'flex',
-    justifyContent: "center"
+    justifyContent: "center",
+    fontFamily: "book",
+    fontSize: " 15.5",
 };
 
 class Register extends Component {

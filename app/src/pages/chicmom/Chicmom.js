@@ -2,13 +2,13 @@
 import React  from 'react';
 import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
 import {Grid, Row, Col} from 'react-bootstrap';
-
+import SuperChicMom from './img/SuperChicMom.png';
 
 
 const styles = {
     display: 'flex',
     justifyContent: "center",
-    padding: 60
+    padding: 60,
 
 
 };
@@ -26,8 +26,9 @@ const Links={
     listStyle: 'none',
     display: "inline",
     fontFamily: "book",
-    fontSize: "15.5",
+    fontSize: "18",
     textAlign: "center",
+
 
 
 };
@@ -42,7 +43,14 @@ const Content ={
     fontSize: "15.5",
     textAlign: "center",
 };
-
+const Img1 ={
+    height:250,
+    width:250,
+    marginRight:400
+};
+const col ={
+    marginLeft: 300
+};
 
 
 const Chicmom =() => {
@@ -59,9 +67,14 @@ const Chicmom =() => {
                     You love your new addition with all your heart and will do everything you can to make sure he or she is set up for success.
                     Check out the list of “must have” items we’ve put together just for you – we think you’ll agree that these chic products will make life with your tiny tot even more super!</p>
                     </Col>
+
                 </Row>
                 <Row>
-                    <Col md={12}>
+                    <Col md={3} style={col}>
+                        <img style={Img1} src={SuperChicMom}/>
+                    </Col>
+
+                    <Col md={2}>
                 <ul style={Links}>
                     <li><Link to="/chicmom/bathingandgrooming">Bathing & Grooming</Link></li>
                     <li><Link to="/chicmom/forfun">For Fun</Link></li>

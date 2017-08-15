@@ -15,6 +15,10 @@ const styles = {
         padding: '16px 0px',
         color: 'white',
         textDecoration: 'none',
+        fontFamily: "book",
+        fontSize: " 15.5",
+
+
     },
     divider: {
         margin: '8px 0',
@@ -55,9 +59,9 @@ const SidebarContent = (props) => {
                 <ul style={styles.sidebarUl}>
                     <li><Link to="/register" style={styles.sidebarLink}>Register</Link></li>
                     <li><Link to="/login"  style={styles.sidebarLink}>Login</Link></li>
-                    <li><Link to="/ecomom" style={styles.sidebarLink}>Ecomom</Link></li>
-                    <li><Link to="/chicmom" style={styles.sidebarLink}>Chicmom</Link></li>
-                    <li><Link to="/practicalmom" style={styles.sidebarLink}>Practicalmom</Link></li>
+                    <li><Link to="/ecomom" style={styles.sidebarLink}>Eco Mom</Link></li>
+                    <li><Link to="/chicmom" style={styles.sidebarLink}>Chic Mom</Link></li>
+                    <li><Link to="/practicalmom" style={styles.sidebarLink}>Practical Mom</Link></li>
                 </ul>
 
             </div>

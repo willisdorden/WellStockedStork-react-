@@ -6,7 +6,9 @@ import Register from './Register';
 
 const styles = {
     display: 'flex',
-    justifyContent: "center"
+    justifyContent: "center",
+    fontFamily: "book",
+    fontSize: " 15.5",
 };
 
 
