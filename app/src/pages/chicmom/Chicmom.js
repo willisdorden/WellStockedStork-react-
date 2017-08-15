@@ -1,26 +1,33 @@
 
 import React  from 'react';
-import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
+import {Grid, Row, Col} from 'react-bootstrap';
+
 
 
 const styles = {
     display: 'flex',
-    justifyContent: "center"
+    justifyContent: "center",
+    padding: 60
+
 
 };
 
 const Mom ={
     textAlign:"center",
     display: "inline",
+    fontFamily: "book",
+
 
 };
 
 const Links={
+    padding: 60,
     listStyle: 'none',
-    display: "inline-block",
-    fontFamily: "monospace",
-    fontSize: "20",
-    alignItems: 'center',
+    display: "inline",
+    fontFamily: "book",
+    fontSize: "15.5",
+    textAlign: "center",
 
 
 };
@@ -31,8 +38,8 @@ const Content ={
     backgroundColor: "",
     color: "",
     display: "inline-block",
-    fontFamily: "monospace",
-    fontSize: "20",
+    fontFamily: "book",
+    fontSize: "15.5",
     textAlign: "center",
 };
 
@@ -41,7 +48,9 @@ const Content ={
 const Chicmom =() => {
     return(
         <div className="Chicmom" style={styles}>
-            <div style={Mom}>
+            <Grid>
+                <Row>
+                    <Col md={12} style={Mom}>
                 <h1 style={Mom}>Super Chic Mom</h1>
                 <br/>
 
@@ -49,7 +58,10 @@ const Chicmom =() => {
                     You are always in fashion and you prefer to live in the lap of luxury. You’re no stranger to new trends, fresh styles and classic charm … the same goes for your baby!
                     You love your new addition with all your heart and will do everything you can to make sure he or she is set up for success.
                     Check out the list of “must have” items we’ve put together just for you – we think you’ll agree that these chic products will make life with your tiny tot even more super!</p>
-
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={12}>
                 <ul style={Links}>
                     <li><Link to="/chicmom/bathingandgrooming">Bathing & Grooming</Link></li>
                     <li><Link to="/chicmom/forfun">For Fun</Link></li>
@@ -59,7 +71,9 @@ const Chicmom =() => {
                     <li><Link to="/chicmom/nursery">Nursery</Link></li>
                     <li><Link to="/chicmom/onthemove">On the Move</Link></li>
                 </ul>
-            </div>
+                    </Col>
+                </Row>
+            </Grid>
         </div>
     )
 };
